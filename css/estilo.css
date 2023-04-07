@@ -42,7 +42,7 @@ html {
 
 body {
   height: 100%;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
   width:100%;
 }
 
@@ -65,25 +65,24 @@ body {
   width:50%;
 }
 
-.logo-home {
+/*.logo-home {
     position: absolute;
     top: 0px;
-    left: 100px;
-    height: 150px;
-    width: 165px;
+    left: 120px;
+    height: 168px;    
   }
 
-  .ARG {
+  /*.ARG {
     position: absolute; 
     top: 250px; 
     left: 100px; 
     height: 165px;
-  }
+  }*/
 
   .texto-home {
     position: absolute;
     top: 340px;
-    left: 100px; 
+    left: 120px; 
     font-family: Playfair-Regular; 
     font-size: 2.7rem; 
     line-height: 1.1;
@@ -92,7 +91,7 @@ body {
   .subtexto-home {
     position: absolute;
     top: 500px;
-    left: 100px; 
+    left: 120px; 
     font-family: Montserrat-Regular; 
     font-size: 1rem; 
     line-height: 1.2;
@@ -102,7 +101,7 @@ body {
   .subsubtexto-home {
     position: absolute;
     top: 530px;
-    left: 100px; 
+    left: 120px; 
     font-family: Montserrat-Regular; 
     font-size: 0.8rem; 
     line-height: 1.2;
@@ -111,7 +110,7 @@ body {
   .boton-argentina {
     position: absolute;
     top: 600px;
-    left: 100px;
+    left: 120px;
     width: 200px;
     background-color: rgb(36, 34, 34);
     font-family: Montserrat-Regular; 
@@ -124,15 +123,15 @@ body {
     box-shadow: none !important;
   }
 
-.boton-argentina:hover {
-  outline:none !important;
-  box-shadow: none !important;
-}
+  .boton-argentina:hover {
+    outline:none !important;
+    box-shadow: none !important;
+  }
 
   .boton-portugal {
     position: absolute;
     top: 600px;
-    left: 350px;
+    left: 370px;
     width: 200px;
     background-color: rgb(204, 196, 196);
     font-family: Montserrat-Regular; 
@@ -147,17 +146,17 @@ body {
     box-shadow: none !important;
   }
 
-.boton-portugal:hover {
-  background-color: rgb(170, 157, 157);
-  color: white !important;
-  outline:none !important;
-  box-shadow: none !important;
-}
+  .boton-portugal:hover {
+    background-color: rgb(170, 157, 157);
+    color: white !important;
+    outline:none !important;
+    box-shadow: none !important;
+  }
 
   .linea-redes-home {
     position: absolute;
     top: 700px;
-    left: 100px;    
+    left: 120px;    
     font-family: Montserrat-Regular; 
     font-size: 1.1rem; 
     color: gray;
@@ -312,6 +311,10 @@ body {
   width: 350px;
   font-family: 'Montserrat-Regular', sans-serif ;
   opacity: 0.9;
+  display:none; 
+  padding-top:80px; 
+  right:0; 
+  z-index:2; 
 }
 
 .sidebar-burger {
@@ -321,8 +324,20 @@ body {
 }
 
 .sidebar-burger:hover {
-color:#f5c9ae !important;
-background-color:#000!important;
+  color:#f5c9ae !important;
+  background-color:#000!important;
+}
+
+.sidebar-icono-close {
+  font-size: 2.2rem;
+  color:#c4b3a4;
+  padding:20 12px;   
+}
+
+.sidebar-icono-close:hover {
+  color:#f5c9ae !important;
+  background-color:#000!important;
+  font-weight: bold; 
 }
     
 .sidebar-item {
@@ -352,392 +367,7 @@ background-color:#000!important;
 }
 
 
-
-/*.sidebar-subitem {
-  font-family: 'Montserrat-Regular', sans-serif ;
-  font-size: 0.9rem;
-  color:#c5c4c4;
-  margin-left: 25%;
-}
-
-.sidebar-subitem::after{
-  font-family: 'Montserrat-Regular', sans-serif ;
-  font-size: 0.9rem;  
-  display:block;
-  content: '';
-  border-bottom: solid 2px #47c3f8;  
-  transform: scaleX(0);  
-  transition: transform 800ms ease-in-out;
-}
-
-.sidebar-subitem:hover {
-  font-family: 'Montserrat-Regular', sans-serif ;  
-  font-weight: bold;
-  color:#47c3f8 !important;
-  background-color:#000!important;
-  margin-left: 25%;
-}
-
-.sidebar-subitem:hover:after {
-  transform: scaleX(1);
-}*/
-
-
-/*
-  i.fab {
-    font-size: 2rem;
-    font-style: normal;
-    font-family: fontawesome;
-  }
-  
-  .fa-instagram:before {
-    color: transparent;
-    position: absolute; 
-    left: 15%; 
-    top: 30%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, #5BC4F1,#517FBF);
-  }
-
-  .fa-youtube:before {
-    color: transparent;
-    position: absolute; 
-    left: 13.5%; 
-    top: 36%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, #5BC4F1,#517FBF);
-    font-size: 2rem;
-    font-style: normal;
-  }
-
-  .fa-facebook:before {
-    color: transparent;
-    position: absolute; 
-    left: 16%; 
-    top: 42%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, #5BC4F1,#517FBF);
-  }
-
-  .fa-whatsapp:before {
-    color: transparent;
-    position: absolute; 
-    left: 14%; 
-    top: 48%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, #5BC4F1,#517FBF);
-    font-size: 2.4rem;
-  }
-
-  .titulo-grande {
-    font-size: 2.5rem; 
-    font-family: 'Montserrat-ExtraBold', sans-serif; 
-    letter-spacing: 12px;
-  }
-
-  .titulo-novedades {
-    font-size: 2.5rem; 
-    font-family: 'Montserrat-ExtraBold', sans-serif; 
-    letter-spacing: 12px;
-    margin-top: 0px;
-    margin-bottom: 70px;
-  }
-
-  .nombre-proyecto {
-    font-size: 0.9rem; 
-    font-family: 'Montserrat-Regular', sans-serif; 
-    letter-spacing: 4px;
-  }
-
-  .pipeline {
-    color:#47c3f8; 
-    font-family: 'Montserrat-ExtraBold', sans-serif; 
-    font-size: 1.2rem; 
-  }
-
-  .sombra {
-    box-shadow: 10px 10px 10px rgb(139, 137, 137) !important;
-  }
-
-
-  
-  .fondo-texto-foto-proyecto{
-      position:absolute;
-      right:0;
-      bottom:0;
-      background-color:#575656;
-      opacity: 0.5;
-      width: 100%;            
-    }
-
-    .texto-foto-proyecto {
-      font-family: 'Montserrat-ExtraBold', sans-serif ;
-      color:white; 
-      font-size: 1.6rem;
-      letter-spacing: 7px;   
-      padding-top: 2%;   
-    }
-
-    .carousel-control-prev {
-      margin-left: -45px; 
-      width: 0% !important; 
-      top: -30%;
-    }
-
-    .carousel-control-next {
-      margin-right: -35px; 
-      width: 0% !important;
-      top: -30%;
-    }
-
-    .flecha-anterior {
-      font-size: 3rem; 
-      width: 0% !important;
-    }
-
-    .flecha-siguiente {
-      font-size: 3rem; 
-      width: 0% !important;
-    }
-
-    .texto-publicidad-vos-sonias {
-      position: absolute;
-      top:32%; 
-      left: 5%;     
-      font-family: 'Montserrat-Regular'; 
-      font-size: 2.5rem; 
-      color: white;   
-      letter-spacing: 2px;    
-    }
-
-    .texto-publicidad-nosotros {
-      position: absolute;
-      top:40%; 
-      left: 5%;     
-      font-family: 'Montserrat-ExtraBold'; 
-      font-size: 1.8rem; 
-      color: white; 
-      letter-spacing: 2.5px;      
-    }
-
-    .en-tu-terreno {
-      position: absolute;
-      top:46%;
-      left:5%;
-    }
-
-    .img-en-tu-terreno {
-      width:420px; 
-      height: auto;
-    }
-
-    .img-publicidad {
-      width:250px; 
-      height: auto;
-    }
-
-    .div-financiacion {       
-      position: absolute; 
-      top:20%; 
-      right: 0;   
-    }
-
-    .div-entrega {      
-       position: absolute; 
-       top:31%; 
-       right:0;
-    }
-
-    .div-personalizacion {      
-      position: absolute; 
-      top:42%; 
-      right:0;
-    }
-
-    .letras-tu-suenio {
-      position: absolute;
-      top:62%; 
-      left: 5%; 
-      font-family: 'Montserrat-ExtraBold';       
-      font-size: 4.7rem; 
-      color: #5BC4F1;
-      letter-spacing: 2px;
-    }
-
-    .texto-financiacion {
-      font-family: 'Montserrat-Regular'; 
-      font-size: medium; 
-      padding-left:20%; 
-      padding-right: 20%;
-      line-height: 30px;
-    }
-
-
-    .smart-home {
-      animation-name: smart-home-animation;
-      animation: smart-home-animation 3s ;
-      animation-timing-function: ease-out;
-    }   
-
-    @keyframes smart-home-animation {
-      from {left: 25%; opacity:0;}
-      to {left: 0%; opacity: 1;}
-    }
-
-  .texto-smart-home {
-    position: absolute; 
-    top: 35%; 
-    left: 24%;
-    transform: translate(-50%, -50%);
-    font-family: 'Montserrat-ExtraBold', sans-serif ;
-    color:black; 
-    font-weight: 800; 
-    font-size: 3rem;
-    line-height: 1.2;
-    letter-spacing: 10px;
-  }
-
-  .texto-smart-home-small {
-    position: absolute; 
-    top: 60%; 
-    left: 24%;
-    transform: translate(-50%, -50%);
-    font-family: 'Montserrat-Light', sans-serif ;
-    color:white; 
-    font-size: 1rem;
-    line-height: 1.5;   
-    letter-spacing: 1px;     
-  }
-
-
-  .sustentabilidad {
-    animation-name: sustentabilidad-animation;
-    animation: sustentabilidad-animation 3s;
-    animation-timing-function: ease-out;
-  }
-  
-  @keyframes sustentabilidad-animation {
-    from {right: 25%; opacity:0;}
-    to {right: 0%; opacity: 1;}
-  }
-
-  .texto-sustentabilidad {
-    position: absolute; 
-    top: 35%; 
-    left: 76%;
-    transform: translate(-50%, -50%);
-    font-family: 'Montserrat-ExtraBold', sans-serif ;
-    color:black; 
-    font-weight: 800; 
-    font-size: 2.7rem;
-    line-height: 1.2;
-    letter-spacing: 10px;
-  }
-
-  .texto-sustentabilidad-small {
-    position: absolute; 
-    top: 70%; 
-    left: 76%;
-    transform: translate(-50%, -50%);
-    font-family: 'Montserrat-Light', sans-serif ;
-    color:white; 
-    font-size: 1rem;
-    line-height: 1.5;   
-    letter-spacing: 1px;     
-  }
-
-  
-
-  .linea-textos-contacto {
-    position: absolute; 
-    display: inline-block;
-    top: 70%; 
-    left: 0px;
-    font-family: 'Montserrat-Regular', sans-serif ;
-    text-align: center;
-    color: white; 
-    font-size: 1.1rem; 
-    letter-spacing: 4px;
-    width:100%;       
-  }
-
-  .social-icon {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    color: rgb(64, 179, 224);
-    text-align:center;
-    border-radius: 50%;
-    padding:.5em .3em 0 .3em;
-    background-color:#ffffff;
-    margin:.5em;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .pie-de-pagina {
-    background-color: black; 
-    margin-top: 0px;
-    text-align: start;
-    padding: 30px;    
-    --bs-gutter-x: 0rem;
-  }
-
-  .link-pie-de-pagina {
-    font-family: 'Montserrat-Regular', sans-serif;
-    color: white;
-    text-decoration: none;
-  }
-
-  .link-pie-de-pagina:hover {
-    color: #47c3f8;
-    font-weight: bold;
-  }
-
-  .red-pie-de-pagina {
-    font-size: 1.6rem; 
-    color: white;   
-  }
-
-  .red-pie-de-pagina:hover {
-    color: #47c3f8;
-  }
-
-  .pie-1 {
-    padding-left: 5%;
-    padding-bottom:20px;
-  }
-
-  .pie-2 {
-    text-align: end;
-    padding-right: 5%;
-    padding-bottom:20px;
-    font-size: 1.6rem;
-  }
-
-  .texto-copyright {
-    font-family: 'Montserrat-Regular', sans-serif; 
-    color: #47c3f8;
-    font-size: 1rem;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-
-  .logo-proveedor {
-    height: 80px;
-  }
-
-  */
-
-/* ---------------------------------*/
+/* ----------- CELULAR ----------------------*/
 
 @media screen and (max-width: 768px) {
 
@@ -752,7 +382,7 @@ background-color:#000!important;
     width:50%;
   }
 
-  .logo-home {
+  /*.logo-home {
     position: absolute;
     top: 0px;
     left: 30px;
@@ -765,15 +395,15 @@ background-color:#000!important;
     top: 100px; 
     left: 30px; 
     height: 60px;
-  }
+  }*/
 
   
   .texto-home {
     position: absolute;
-    top: 130px;
-    left: 30px; 
+    top: 104px;
+    left: 37px; 
     font-family: Playfair-Regular; 
-    font-size: 1.1rem; 
+    font-size: 1rem; 
     line-height: 1.2;
   }
 
@@ -788,8 +418,8 @@ background-color:#000!important;
   .boton-argentina {
     position: absolute;
     top: 190px;
-    left: 30px;
-    width: 70px;
+    left: 37px;
+    width: 65px;
     height: 25px;
     background-color: rgb(36, 34, 34);
     font-family: Montserrat-Regular; 
@@ -802,7 +432,7 @@ background-color:#000!important;
     position: absolute;
     top: 190px;
     left: 115px;
-    width: 70px;
+    width: 65px;
     height: 25px;
     background-color: rgb(204, 196, 196);
     font-family: Montserrat-Regular; 
@@ -901,11 +531,17 @@ background-color:#000!important;
 
 
   .sidebar {
-    width: 350px;
+    width: 250px;
     font-family: 'Montserrat-Regular', sans-serif ;
     opacity: 0.9;
   }
 
+  .sidebar-icono-close {
+    font-size: 1.2rem;
+    padding-top:10px;
+    padding-right: 20px; 
+  }
+  
   .sidebar-item {
       font-size: 0.7rem;
     }
@@ -916,14 +552,14 @@ background-color:#000!important;
   }
 
   .sidebar-burger {
-        font-size: 1.2rem;
-        padding-top:10px;
-        padding-right: 8px;
+      font-size: 1.2rem;
+      padding-top:10px;
+      padding-right: 10px;
     }  
 
 
 }
-
+/*
 @media screen and (min-width:537px) and (max-width: 768px) {
 
     .sidebar-item {
@@ -934,4 +570,75 @@ background-color:#000!important;
       font-size: 1.3rem;
       padding:10px 15px;
     }
+}
+*/
+
+@media screen and (min-width:1400px) {
+
+  .sidebar-item {
+    font-size: 1.5rem;
+  }
+
+  .sidebar-burger {
+    font-size: 3rem;
+    padding:10px 25px;
+  }
+
+  .texto-home {
+    position: absolute;
+    top: 365px;
+    left: 130px; 
+    font-family: Playfair-Regular; 
+    font-size: 2.7rem; 
+    line-height: 1.1;
+  }
+
+  .subtexto-home {
+    position: absolute;
+    top: 520px;
+    left: 130px; 
+    font-family: Montserrat-Regular; 
+    font-size: 1rem; 
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+
+  .subsubtexto-home {
+    position: absolute;
+    top: 550px;
+    left: 130px; 
+    font-family: Montserrat-Regular; 
+    font-size: 0.8rem; 
+    line-height: 1.2;
+  }
+
+  .boton-argentina {
+    position: absolute;
+    top: 610px;
+    left: 130px;
+    width: 200px;
+  }
+ 
+
+  .boton-portugal {
+    position: absolute;
+    top: 610px;
+    left: 380px;
+    width: 200px;    
+  }
+
+  .linea-redes-home {
+    position: absolute;
+    top: 700px;
+    left: 130px;    
+    font-family: Montserrat-Regular; 
+    font-size: 1.1rem; 
+    color: gray;
+  }
+
+  .sidebar-icono-close {
+    font-size: 2.2rem;
+    padding-top:20px;
+    padding-right: 30px; 
+  }
 }
