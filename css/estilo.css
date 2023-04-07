@@ -232,6 +232,10 @@ body {
     padding-bottom: 40px;
   }
 
+  .video_play {
+    width:1000px !important;
+  }
+
   .alto_imagen_1 {
     height: 80px;
   }
@@ -317,7 +321,7 @@ body {
 }
 
 .sidebar-burger:hover {
-color:#eeb490 !important;
+color:#f5c9ae !important;
 background-color:#000!important;
 }
     
@@ -346,6 +350,7 @@ background-color:#000!important;
   color:#eeb490 !important;
   background-color:#000!important;
 }
+
 
 
 /*.sidebar-subitem {
@@ -768,7 +773,7 @@ background-color:#000!important;
     top: 130px;
     left: 30px; 
     font-family: Playfair-Regular; 
-    font-size: 1.3rem; 
+    font-size: 1.1rem; 
     line-height: 1.2;
   }
 
@@ -782,7 +787,7 @@ background-color:#000!important;
 
   .boton-argentina {
     position: absolute;
-    top: 200px;
+    top: 190px;
     left: 30px;
     width: 70px;
     height: 25px;
@@ -795,7 +800,7 @@ background-color:#000!important;
 
   .boton-portugal {
     position: absolute;
-    top: 200px;
+    top: 190px;
     left: 115px;
     width: 70px;
     height: 25px;
@@ -808,12 +813,7 @@ background-color:#000!important;
   
 
   .linea-redes-home {
-    position: absolute;
-    top: 700px;
-    left: 100px;    
-    font-family: Montserrat-Regular; 
-    font-size: 1.1rem; 
-    color: gray;
+    display: none;
   }
 
   .somos {
@@ -853,6 +853,10 @@ background-color:#000!important;
   .barra-flecha {
     padding-top: 20px; 
     padding-bottom: 20px;
+  }
+
+  .video_play {
+    width:300px !important;
   }
 
   .alto_imagen_1 {
@@ -895,79 +899,7 @@ background-color:#000!important;
     height: 25px;
   }
 
-/*  .flecha-abajo-sobre-imagen {
-    display:none;
-  }
 
-  .separador-proyectos {
-    height: 50px;
-  }
-
-  .separador-novedades {
-    height: 50px;
-  }
-
-  i.fab {
-    font-size: 1.2rem;
-  }
-
-  .fa-instagram:before {
-    position: absolute; 
-    left: 20%; 
-    top: 32%;
-    font-size: 1rem;
-  }
-
-  .fa-youtube:before {
-    color: transparent;
-    position: absolute; 
-    left: 18%; 
-    top: 43%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, #5BC4F1,#517FBF);
-    font-size: 1rem;
-    font-style: normal;
-  }
-
-  .fa-facebook:before {
-    color: transparent;
-    position: absolute; 
-    left: 23%; 
-    top: 54%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, #5BC4F1,#517FBF);
-    font-size: 1rem;
-  }
-
-  .fa-whatsapp:before {
-    color: transparent;
-    position: absolute; 
-    left: 21%; 
-    top: 63%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, #5BC4F1,#517FBF);
-    font-size: 1rem;
-  }
-
-  .fa-whatsapp:before {
-    position: absolute; 
-    left: 20%; 
-    bottom: 10%; 
-    font-size: 1.5rem;
-  }
-
-  .animate-right{
-    position:relative;
-    animation:animateright 0.4s
-    }
-    @keyframes animateright{
-      from{right:-300px;opacity:0} 
-      to{right:0;opacity:1}
-    }
-*/
   .sidebar {
     width: 350px;
     font-family: 'Montserrat-Regular', sans-serif ;
@@ -988,230 +920,8 @@ background-color:#000!important;
         padding-top:10px;
         padding-right: 8px;
     }  
-/*
-  .letras-sobre-imagen {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    font-size: 0.7rem;
-    letter-spacing: 4px;
-  }
- 
-  @keyframes desarrollamos-animation {
-    from {top: 40%; color:transparent; font-size: 0.4rem}
-    to {top: 50%; color:white; font-size: 0.7rem;}
-  }
 
-  @keyframes creamos-animation {
-    from {left: 20%; top:40%; color:transparent;}
-    to {left: 5%; top:50%; color:white;}
-  }
- 
-  @keyframes cuidamos-animation {
-    from {left: 15%; color:transparent; font-size: 0.4rem}
-    to {left: 5%; color:white; font-size: 0.7rem}
-  }
 
-  @keyframes materializamos-animation {
-    from {top: 60%; color:transparent;}
-    to {top: 50%; color:white;}
-  }
-
-  @keyframes confiamos-animation {
-    from {top: 40%; color:transparent;}
-    to {top: 50%; color:white;}
-  }
-
-  .titulo-grande {
-    font-size: 1.2rem; 
-    font-family: 'Montserrat-ExtraBold', sans-serif; 
-    letter-spacing: 10px;
-  }
-
-  .titulo-novedades {
-    font-size: 1.2rem; 
-    font-family: 'Montserrat-ExtraBold', sans-serif; 
-    letter-spacing: 10px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-  }
-
-  .nombre-proyecto {
-    display: none;
-  }
-
-  .texto-foto-proyecto {
-    font-size: 0.6rem;
-    letter-spacing: 7px;   
-    padding-top: 2%;   
-    padding-bottom: 0; 
-    margin-bottom:2%;  
-  }
-
-  .carousel-control-prev {
-    margin-left: -15px; 
-    width: 0% !important; 
-    top: -30%;
-  }
-
-  .carousel-control-next {
-    margin-right: -15px; 
-    width: 0% !important;
-    top: -30%;
-  }
-
-  .flecha-anterior {
-    font-size: 2rem; 
-    width: 0% !important;
-  }
-
-  .flecha-siguiente {
-    font-size: 2rem; 
-    width: 0% !important;
-  }
-
-  .rectangulo-foto-proyecto{
-    width: 60%; 
-    height: 25%;           
-  }
-
-  .texto-publicidad-vos-sonias {
-    position: absolute;
-    top:32%; 
-    left: 4%;     
-    font-family: 'Montserrat-Regular'; 
-    font-size: 0.7rem; 
-    color: white;   
-    letter-spacing: 2px;    
-  }
-
-  .texto-publicidad-nosotros {
-    position: absolute;
-    top:40%; 
-    left: 4%;     
-    font-family: 'Montserrat-ExtraBold'; 
-    font-size: 0.5rem; 
-    color: white; 
-    letter-spacing: 2px;      
-  }
-
-  .en-tu-terreno {
-    position: absolute;
-    top:46%;
-    left: 4%;
-  }
-
-  .img-en-tu-terreno {
-    width:140px; 
-    height: auto;
-  }
-
-  .img-publicidad {
-    width:80px; 
-    height: auto;
-  }
-
-  .div-financiacion {       
-    position: absolute; 
-    top:12%; 
-    right: 0;
-  }
-
-  .div-entrega {      
-     position: absolute; 
-     top:27%; 
-     right:0;
-  }
-
-  .div-personalizacion {      
-    position: absolute; 
-    top:42%; 
-    right:0;
-  }
-
-  .letras-tu-suenio {
-    position: absolute;
-    top:63%; 
-    left: 4%; 
-    font-family: 'Montserrat-ExtraBold';       
-    font-size: 1.5rem; 
-    color: #5BC4F1;
-    letter-spacing: 2px;
-  }
-
-  
-  .texto-financiacion {
-    font-family: 'Montserrat-Regular'; 
-    font-size: small; 
-    padding-left:20%; 
-    padding-right: 20%;
-    line-height: 25px;
-  }
-
-  .texto-smart-home {
-    position: absolute; 
-    top: 50%; 
-    left: 24%;
-    font-size: 1.2rem;
-    line-height: 1.2;
-    letter-spacing: 10px;
-  }
-
-  .texto-smart-home-small {
-    font-size: 0rem;   
-  }
-
-  .texto-sustentabilidad {
-    position: absolute; 
-    top: 50%; 
-    left: 76%;    
-    font-size: 1.2rem;
-    letter-spacing: 10px;
-  }
-
-  .texto-sustentabilidad-small {
-    font-size: 0rem;    
-  }
-
- 
-
-  .pie-de-pagina {
-    text-align: center;
-  }
-
-  .pie-de-pagina {
-    padding: 10px;
-    padding-top: 20px;   
-    padding-bottom: 20px;  
-  }
-
-  .link-pie-de-pagina {
-    font-size: 0.6rem;    
-  }
-
-  .red-pie-de-pagina {
-    font-size: 1rem; 
-    color: white;   
-  }
-
-  .pie-1 {
-    padding-left: 0%;
-  }
-
-  .pie-2 {
-    text-align: center;
-    padding-right: 0%;    
-  }
-
-  .texto-copyright {
-    font-size: 0.7rem;   
-  }
-
-  .logo-proveedor {
-    height: 25px;
-  }
-}
-*/
 }
 
 @media screen and (min-width:537px) and (max-width: 768px) {

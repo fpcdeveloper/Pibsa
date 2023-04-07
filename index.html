@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/w3.css">      
+    <link rel="stylesheet" href="css/carrousel.css">  
     <link rel="stylesheet" href="css/estilo.css">
 
     <link rel="icon" href="images/favicon-32x32.png">  
@@ -26,8 +27,8 @@
     <!-- MENU SIDEBAR -->
     <nav class="w3-sidebar w3-black w3-animate-right w3-large sidebar" 
         style="display:none; padding-top:80px; right:0; z-index:2" id="mySidebar">
-        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-display-topleft sidebar-burger" 
-            style="padding:20 12px;"><i class="bi bi-chevron-double-right"></i>
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-display-topright sidebar-burger" 
+            style="padding:20 12px;"><i class="bi bi-x-lg"></i>
         </a>
         <div class="w3-bar-block w3-left">
             <a href="#home" class="w3-bar-item w3-button sidebar-item" 
@@ -36,8 +37,8 @@
             <a href="#somos" class="w3-bar-item w3-button sidebar-item" 
                 onclick="closeNav()">&nbsp;SOMOS
             </a>
-            <a href="#medioambiente" class="w3-bar-item w3-button sidebar-item" 
-                onclick="closeNav()">&nbsp;MEDIOAMBIENTE
+            <a href="#video" class="w3-bar-item w3-button sidebar-item" 
+                onclick="closeNav()">&nbsp;CALIDAD
             </a>
             <a href="#productos" class="w3-bar-item w3-button sidebar-item" 
                 onclick="closeNav()">&nbsp;PRODUCTOS
@@ -46,10 +47,10 @@
                     onclick="closeNav()">&nbsp;CONTACTO
             </a>
         </div>
-    </nav>  
-    
-    <span class="w3-button w3-top sidebar-burger" 
-        style="width:auto; right:0; background-color: transparent !important; position: absolute;" onclick="openNav()">
+    </nav>             
+    <span id="menu-hamburguesa" class="w3-button w3-top sidebar-burger" 
+        style="width:auto; right:0; background-color: transparent !important; position: absolute;" 
+        onclick="openNav()">
         <i class="fa fa-bars"></i>
     </span> 
 
@@ -57,8 +58,12 @@
     <!-- HOME -->
     <a name="inicio"></a>
     <div class="row todo-cero">
-        <div class="col barra-home todo-cero">
-            <a href="index.html"><img src="images/logo_negro.png" class="logo-home"></a> 
+        <div class="col todo-cero" >
+            <div>
+                <a href="index.html" >
+                    <img src="images/logo_negro.png" class="logo-home">
+                </a> 
+            </div>
             <img src="images/ARG.png" class="ARG" >
             <div class="texto-home">
                 Producimos y<br>
@@ -90,10 +95,19 @@
                 <i class="bi bi-instagram"></i>
             </div>
         </div>
-        <div class="col todo-cero">
-            <img src="images/FotoHome.png" class="todo-cero" style="width:100%;"> 
+        <div class="col col-6 todo-cero" >
+            <img src="images/fondo1_Home.png" style="width: 100%;">
         </div>
+        <div class="col col-6 carrousel todo-cero" > 
+    
+            <img src="images/FotoHome1.jpg" style="width: 100%;">
+            <img src="images/FotoHome4.jpg" style="width: 100%;">
+            <img src="images/FotoHome5.jpg" style="width: 100%;">
+            <img src="images/FotoHome2.jpg" style="width: 100%;">
+            <img src="images/FotoHome3.jpg" style="width: 100%;">
+            
 
+        </div>       
 
     </div>
  
@@ -126,7 +140,7 @@
     </div>
 
      <!-- VIDEO -->
-     <a name="medioambiente"></a>
+     <a name="video"></a>
      <div class="row"> 
         <img src="images/barra_dorada.png" style="width: 100%;">
      </div>
@@ -135,7 +149,9 @@
             <img src="images/arrow.png" style="width: 8%;">
         </div>    
         <div style="padding-top:0px; padding-bottom: 30px; text-align: center;">
-            <img src="images/video.png" style="width: 70%;">
+            <video autoplay loop muted playsinline class="video_play">
+                <source src="images/CORTICA_v2.mp4" type="video/mp4">
+            </video>
         </div>  
         <div style="text-align:center; margin-bottom: 40px;">
             <img src="images/prov_logo_isa.png" class="alto_imagen_1">&nbsp;&nbsp;
