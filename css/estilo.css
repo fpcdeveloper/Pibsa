@@ -269,7 +269,7 @@ body {
     letter-spacing: 10px;
     width:100%;
     padding-top: 440px; 
-    padding-bottom: 500px;
+    /*padding-bottom: 500px;*/
   }
 
   .link-icono-contacto {
@@ -281,6 +281,13 @@ body {
     color:transparent;
   }
 
+
+  .icono-contacto {
+    width:45px;
+    height: 45px;
+  }
+
+  
   .icono-contacto:hover {
     color: #c4b4a7;  
     background: transparent;
@@ -294,9 +301,8 @@ body {
     transition: transform .9s;    
   }
 
-  .icono-contacto {
-    width:45px;
-    height: 45px;
+  .separador-contacto {
+    height: 500px;
   }
 
   .zoom {
@@ -521,7 +527,7 @@ body {
     font-size: 1rem; 
     letter-spacing: 5px;
     padding-top: 130px;    
-    padding-bottom: 390px; 
+    
   }
 
   .icono-contacto {
@@ -529,6 +535,9 @@ body {
     height: 25px;
   }
 
+  .separador-contacto {
+    height: 160px;
+  }
 
   .sidebar {
     width: 250px;
