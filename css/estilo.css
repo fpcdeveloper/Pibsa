@@ -278,7 +278,7 @@ body {
 
   .link-icono-contacto:hover {
     text-decoration: none;
-    color:transparent;
+    color: #242222;
   }
 
 
@@ -289,16 +289,7 @@ body {
 
   
   .icono-contacto:hover {
-    color: #c4b4a7;  
-    background: transparent;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    vertical-align: middle;
-    padding: 10px; 
-    transition: transform .9s;    
+    color:#eeb490;
   }
 
   .separador-contacto {
@@ -427,7 +418,7 @@ body {
     left: 37px;
     width: 65px;
     height: 25px;
-    background-color: rgb(36, 34, 34);
+    background-color: #242222;
     font-family: Montserrat-Regular; 
     font-size: 0.5rem;
     color: white !important;
