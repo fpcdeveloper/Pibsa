@@ -35,6 +35,11 @@
   src: url("../fonts/PlayfairDisplay6woff2.ttf");
 }  
 
+@font-face {
+  font-family: "Playfair-Italic";
+  src: url("../fonts/PlayfairDisplay-Italic.ttf");
+}  
+
 
 html {
   height: 100%;  
@@ -178,15 +183,16 @@ body {
     font-size: 3.5rem;
     text-align: center;
     padding-top: 2%;
-    color: aliceblue;   
+    color: aliceblue;
   }
 
 
-  .subrayadoDorado {  
-    text-align: center;  
-    border: solid 1px red;
-    width:10%;
-    height:5px;
+  .subrayadoDoradoSomos {
+    background-image: linear-gradient(to right, #a4784a,#dbb183, #a4784a);
+    height: 2px;
+    max-width: 13%;
+    margin: 1px auto 0 auto;
+    padding: 0;
   }
 
   .logo-somos {
@@ -251,6 +257,26 @@ body {
     background-image: url('../images/fondo4_ProductosContacto.png') !important;
     background-repeat: no-repeat;
     background-size: 100%;    
+  }
+
+  .cuadrado-producto {
+    margin: 80px; 
+    width:400px; 
+    height: 400px; 
+    background-color: #cabcae; 
+    font-size: 2.2rem; 
+    color: aliceblue; 
+    font-family: 'Montserrat-Light', sans-serif ;
+    padding-top: 10%;
+  }
+
+  .link-cuadrado-producto {
+    font-size: 1.2rem !important; 
+    text-decoration: none;
+  }
+
+  .link-cuadrado-producto:hover {      
+    color:rgb(54, 52, 52) !important;
   }
 
   .imagenes-productos {
@@ -453,6 +479,11 @@ body {
     padding-top: 5%;
   }
 
+  .subrayadoDoradoSomos {    
+    height: 1px;
+    max-width: 13%;
+  }
+  
   .logo-somos {
     margin-top:8px;    
   }
@@ -503,6 +534,21 @@ body {
     height: 70px;
     font-size: 1.2rem;
     padding-top: 5%;
+  }
+
+  .cuadrado-producto {
+    margin: 30px; 
+    width:130px; 
+    height: 130px; 
+    background-color: #cabcae; 
+    font-size: 1rem; 
+    color: aliceblue; 
+    font-family: 'Montserrat-Light', sans-serif ;
+    padding-top: 7%;
+  }
+
+  .link-cuadrado-producto {
+    font-size: 0.7rem !important;     
   }
 
   .imagenes-productos {
@@ -573,6 +619,8 @@ body {
 }
 */
 
+
+/*--------- PANTALLA MUY GRANDE ------------*/
 @media screen and (min-width:1400px) {
 
   .sidebar-item {
@@ -586,55 +634,81 @@ body {
 
   .texto-home {
     position: absolute;
-    top: 365px;
-    left: 130px; 
+    top: 478px;
+    left: 170px; 
     font-family: Playfair-Regular; 
-    font-size: 2.7rem; 
-    line-height: 1.1;
+    font-size: 4rem; 
+    line-height: 1.2;
   }
 
   .subtexto-home {
     position: absolute;
-    top: 520px;
-    left: 130px; 
+    top: 730px;
+    left: 170px; 
     font-family: Montserrat-Regular; 
-    font-size: 1rem; 
+    font-size: 1.5rem; 
     line-height: 1.2;
     letter-spacing: 2px;
   }
 
   .subsubtexto-home {
     position: absolute;
-    top: 550px;
-    left: 130px; 
+    top: 770px;
+    left: 170px; 
     font-family: Montserrat-Regular; 
-    font-size: 0.8rem; 
+    font-size: 1.1rem; 
     line-height: 1.2;
   }
 
   .boton-argentina {
     position: absolute;
-    top: 610px;
-    left: 130px;
-    width: 200px;
+    top: 850px;
+    left: 170px;
+    width: 250px;
+    height: 50px; 
+    font-size: 1.4rem;
   }
  
 
   .boton-portugal {
     position: absolute;
-    top: 610px;
-    left: 380px;
-    width: 200px;    
+    top: 850px;
+    left: 500px;
+    width: 250px;   
+    height: 50px; 
+    font-size: 1.4rem;
   }
 
   .linea-redes-home {
     position: absolute;
-    top: 700px;
-    left: 130px;    
+    top: 950px;
+    left: 170px;    
     font-family: Montserrat-Regular; 
-    font-size: 1.1rem; 
+    font-size: 1.3rem; 
     color: gray;
   }
+
+  .subrayadoDoradoSomos {    
+    height: 2px;
+    max-width: 9%;
+  }
+
+  
+  .cuadrado-producto {
+    margin: 100px; 
+    width: 500px; 
+    height: 500px; 
+    background-color: #cabcae; 
+    font-size: 3.8rem; 
+    color: aliceblue; 
+    font-family: 'Montserrat-Light', sans-serif ;
+    padding-top: 5%;
+  }
+
+  .link-cuadrado-producto {
+    font-size: 2rem !important;     
+  }
+
 
   .sidebar-icono-close {
     font-size: 2.2rem;

@@ -18,6 +18,7 @@
 
     <link rel="icon" href="images/favicon-32x32.png">  
 
+
 </head>
 
 <body class="todo-cero">
@@ -76,9 +77,9 @@
                 SOMOS REPRESENTANTES EXCLUSIVOS DE ANTONIO ALMEIDA CORTI&Ccedil;AS
             </div>
             <div>
-                <button class="btn boton-argentina">
+                <a href="index.html" class="btn boton-argentina">
                     ARGENTINA
-                </button>
+                </a>
                 <a href="https://aalmeida.pt/" target="_blank" class="btn boton-portugal">
                     PORTUGAL
                 </a>
@@ -115,9 +116,9 @@
     <!-- SOMOS -->
     <a name="somos"></a>
     <div class="row somos"> 
-        <div class="barra-somos">
-            SOMOS   
-            <!--<div><hr class="subrayadoDorado"></div>         -->
+        <div class="barra-somos" style="justify-content: center;">
+            SOMOS               
+            <div class="subrayadoDoradoSomos"></div>
         </div> 
         
         <div class="logo-somos">  
@@ -167,12 +168,21 @@
     <a name="productos"></a>    
     <div class="row productosYcontacto" style="text-align: center;">
         <!--<img src="images/fondo4_ProductosContacto.png" style="width: 100%;">-->
-        <div class="barra-productos">PRODUCTOS</div>
-        <div class="imagenes-productos">
-            <img src="images/tapon.jpg" class="imagen-tapon">&nbsp;&nbsp;&nbsp;
-            <img src="images/tapon.jpg" class="imagen-tapon">&nbsp;&nbsp;&nbsp;
-            <img src="images/tapon.jpg" class="imagen-tapon">&nbsp;&nbsp;&nbsp;
-            <img src="images/tapon.jpg" class="imagen-tapon">
+        <div class="barra-productos">
+            PRODUCTOS
+            <div class="subrayadoDoradoSomos"></div>
+        </div>
+        <div style="display:flex; justify-content: center;">
+            <div class="cuadrado-producto">
+                STANDARD<br>
+                <a href="#" class="link-cuadrado-producto"><b>NATURALES</b></a><BR>
+                <a href="#" class="link-cuadrado-producto"><b>T&Eacute;CNICOS</b></a>    
+            </div>
+            <div class="cuadrado-producto">
+                GARANTIA<br>INDIVIDUAL<br>
+                <a href="#" class="link-cuadrado-producto"><b>NATURALES</b></a><BR>
+                <a href="#" class="link-cuadrado-producto"><b>T&Eacute;CNICOS</b></a>   
+            </div>
         </div>
         <a name="contacto"></a>
         <div class="linea-iconos-contacto">
@@ -201,6 +211,10 @@
     function closeNav() {
       document.getElementById("mySidebar").style.display = "none";
     }   
+
+    function mostrar(){
+        document.getElementById('obj').style.display = 'block';
+    }
 
 </script>
 
