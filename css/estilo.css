@@ -140,8 +140,7 @@ body {
     width: 200px;
     background-color: rgb(204, 196, 196);
     font-family: Montserrat-Regular; 
-    color: black !important;
-    
+    color: black !important;    
   }
  
   .boton-portugal:focus {
@@ -259,6 +258,16 @@ body {
     background-size: 100%;    
   }
 
+  .titulo-productos {
+    text-decoration: none;
+  }
+
+  .titulo-productos:hover {
+    text-decoration: none;
+    color: aliceblue;   
+  }
+
+
   .cuadrado-producto {
     margin: 80px; 
     width:400px; 
@@ -279,13 +288,75 @@ body {
     color:rgb(54, 52, 52) !important;
   }
 
-  .imagenes-productos {
-    text-align:center; 
-    padding-top: 70px;
+  .imagenes-productos {    
+    padding-top: 20px;
   }
 
   .imagen-tapon {
-    width:200px;
+    width:240px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .fondo-card-producto {
+    height: 600px;    
+  }
+
+  @keyframes fade_in_show {
+    0% {
+         opacity: 0;
+         transform: scale(0)
+    }
+
+    100% {
+         opacity: 1;
+         transform: scale(1)
+    }
+}
+
+  .tarjeta-corcho {
+    display:flex; 
+    justify-content: center; 
+    color: aliceblue;
+    font-family: 'Montserrat-Light', sans-serif ;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+  }
+
+  .texto-card-tapon {
+    font-family: 'Montserrat-Regular';
+    color:black;
+    font-size: 1rem;
+    text-align: start !important;
+  }
+
+  .titulo-card-tapon {
+    font-family: 'Playfair-Regular';
+    color:black;
+    font-size: 1.5rem;
+    text-align: start !important;
+  }
+
+  .subrayadoDoradoTapon {
+    background-image: linear-gradient(to right, #a4784a,#dbb183, #FFFFFF);
+    height: 2px;
+    max-width: 30%;
+    margin: 1px 0 auto;
+    padding: 0;
+  }
+
+  .boton-corcho {
+    width: 100px;
+    background-color: #cabcae; 
+    font-family: 'Montserrat-Regular'; 
+    color: black !important;        
+  }
+
+  .boton-corcho-atras {
+    width: 50px;
+    background-color: #cabcae; 
+    font-family: 'Montserrat-Regular'; 
+    color: black !important;            
   }
 
   .linea-iconos-contacto {
@@ -294,7 +365,7 @@ body {
     font-size: 3rem; 
     letter-spacing: 10px;
     width:100%;
-    padding-top: 440px; 
+    padding-top: 390px; 
     /*padding-bottom: 500px;*/
   }
 
@@ -319,7 +390,7 @@ body {
   }
 
   .separador-contacto {
-    height: 500px;
+    height: 480px;
   }
 
   .zoom {

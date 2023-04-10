@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="todo-cero">
+<body class="todo-cero" onload="inicioProductos();">
     
 <div class="container-fluid todo-cero">
 
@@ -141,49 +141,245 @@
     </div>
 
      <!-- VIDEO -->
-     <a name="video"></a>
-     <div class="row"> 
-        <img src="images/barra_dorada.png" style="width: 100%;">
-     </div>
-     <div class="row" style="background-color: #c4b4a7; text-align: center; ">
-        <div class="barra-flecha">
-            <img src="images/arrow.png" style="width: 8%;">
-        </div>    
-        <div style="padding-top:0px; padding-bottom: 30px; text-align: center;">
-            <video autoplay loop muted playsinline class="video_play">
-                <source src="images/CORTICA_v2.mp4" type="video/mp4">
-            </video>
-        </div>  
-        <div style="text-align:center; margin-bottom: 40px;">
-            <img src="images/prov_logo_isa.png" class="alto_imagen_1">&nbsp;&nbsp;
-            <img src="images/prov_logo_provino.png" class="alto_imagen_2">&nbsp;&nbsp;
-            <img src="images/prov_logo_cork.png" class="alto_imagen_3">&nbsp;&nbsp;
-            <img src="images/prov_logo_apcer.png" class="alto_imagen_3">&nbsp;&nbsp;
-            <img src="images/prov_logo_IQNet.png" class="alto_imagen_3">&nbsp;&nbsp;
-            <img src="images/prov_logo_celiege_incompleto.png" class="alto_imagen_3">            
-        </div>  
-     </div>
+    <a name="video"></a>
+    <div>
+        <div class="row"> 
+            <img src="images/barra_dorada.png" style="width: 100%;">
+        </div>        
+        <div class="row" style="background-color: #c4b4a7; text-align: center; ">
+            
+            <div class="barra-flecha">
+                <img src="images/arrow.png" style="width: 8%;">
+            </div>    
+            <div style="padding-top:0px; padding-bottom: 30px; text-align: center;">
+                <video autoplay loop muted playsinline class="video_play">
+                    <source src="images/CORTICA_v2.mp4" type="video/mp4">
+                </video>
+            </div>  
+            <div style="text-align:center; margin-bottom: 40px;">
+                <img src="images/prov_logo_isa.png" class="alto_imagen_1">&nbsp;&nbsp;
+                <img src="images/prov_logo_provino.png" class="alto_imagen_2">&nbsp;&nbsp;
+                <img src="images/prov_logo_cork.png" class="alto_imagen_3">&nbsp;&nbsp;
+                <img src="images/prov_logo_apcer.png" class="alto_imagen_3">&nbsp;&nbsp;
+                <img src="images/prov_logo_IQNet.png" class="alto_imagen_3">&nbsp;&nbsp;
+                <img src="images/prov_logo_celiege_incompleto.png" class="alto_imagen_3">            
+            </div>  
+        </div>
+    </div>
     
+    
+
+
     <!-- PRODUCTOS Y CONTACTO -->    
     <a name="productos"></a>    
-    <div class="row productosYcontacto" style="text-align: center;">
+    <div  class="row productosYcontacto " style="text-align: center;">
         <!--<img src="images/fondo4_ProductosContacto.png" style="width: 100%;">-->
         <div class="barra-productos">
-            PRODUCTOS
+            <a href="#productos" class="titulo-productos" onclick="inicioProductos();">
+                PRODUCTOS</a>
             <div class="subrayadoDoradoSomos"></div>
         </div>
         <div style="display:flex; justify-content: center;">
-            <div class="cuadrado-producto">
+            <div class="cuadrado-producto" id="cuadrado-1">
                 STANDARD<br>
-                <a href="#" class="link-cuadrado-producto"><b>NATURALES</b></a><BR>
-                <a href="#" class="link-cuadrado-producto"><b>T&Eacute;CNICOS</b></a>    
+                <a href="#productos" class="link-cuadrado-producto" onclick="mostrarStandardNaturales();"><b>NATURALES</b></a><br>
+                <a href="#productos" class="link-cuadrado-producto" onclick="mostrarStandardTecnicos();"><b>T&Eacute;CNICOS</b></a>    
             </div>
-            <div class="cuadrado-producto">
+            <div class="cuadrado-producto" id="cuadrado-2">
                 GARANTIA<br>INDIVIDUAL<br>
-                <a href="#" class="link-cuadrado-producto"><b>NATURALES</b></a><BR>
-                <a href="#" class="link-cuadrado-producto"><b>T&Eacute;CNICOS</b></a>   
+                <a href="#productos" class="link-cuadrado-producto" onclick="mostrarGarantiaNaturales();"><b>NATURALES</b></a><BR>
+                <a href="#productos" class="link-cuadrado-producto" onclick="mostrarGarantiaTecnicos();"><b>T&Eacute;CNICOS</b></a>   
+            </div>
+        </div>    
+        <div id="productos_standard_1" class="tarjeta-corcho">
+            STANDARD <b>NATURALES</b>
+            <div class="fondo-card-producto imagenes-productos" style="display:flex; 
+            justify-content: center;">
+                <div class="card texto-card-tapon" id="card-tapon1" style="width: 20rem; height: 39rem;">
+                    <img src="images/taponNatural.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title titulo-card-tapon"><b>TAP&Oacute;N NATURAL</b>
+                            <div class="subrayadoDoradoTapon"></div>
+                        </p>
+                        <br>
+                        El tapón de corcho natural es el producto por excelencia para sellar vinos de alta calidad.
+Evidencia de características inigualables con alto rendimiento, mecánico y organoléptico.
+
+                        <!--<p class="card-text texto-card-tapon">
+                            CALIDAD:
+                            <ul class="texto-card-tapon">
+                                <li>Primera</li>
+                                <li>Extra</li>
+                                <li>Flor</li>
+                            </ul> 
+                        </p> 
+                        <p class="card-text texto-card-tapon">
+                            MEDIDAS:
+                            <ul class="texto-card-tapon">
+                                <li>45 x 24 mm</li>
+                                <li>49 x 24 mm</li>
+                            </ul>
+                        </p>-->
+                        <br><br><br>
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="#productos" class="btn boton-corcho-atras" onclick="inicioProductos();">
+                                <i class="bi bi-arrow-left" style="color: white; font-size: 1.6rem;"></i>
+                            </a>
+                            <a href="images/despliegueProducto.png" data-lightbox="imagen" data-title='TAPON NATURAL'>
+                                <button class="btn boton-corcho">
+                                    <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                </button>    
+                            </a>
+                        </div>   
+                        
+                    </div>
+                </div>
             </div>
         </div>
+        <div id="productos_standard_2" class="tarjeta-corcho" >
+            STANDARD <b>T&Eacute;CNICOS</b>
+            <div class="fondo-card-producto imagenes-productos" style="display:flex; 
+                justify-content: center;">
+                <!-- MICROVINO -->
+                <div class="card texto-card-tapon" id="card-tapon2" style="width: 20rem; height: 38rem; margin-left: 10px; margin-right:10px;">
+                    <!--<img src="images/taponNatural.jpg" class="card-img-top">-->
+                    <div class="card-body">
+                        <p class="card-title titulo-card-tapon"><b>TAP&Oacute;N MICROVINO</b>
+                            <div class="subrayadoDoradoTapon"></div>
+                        </p>
+                        <br>
+                        Se produce exclusivamente a partir de materias primas de alta calidad, 100% controladas, 
+                        mediante la tecnología de moldeo individual. Tiene una excelente capacidad 
+                        mecánica y una elevada neutralidad organoléptica.
+                        <br><br><br>
+                        <div style="display: flex; justify-content: space-between;">
+                            <img src="images/taponMicrovino.png" style="width: 50%;">                            
+                            <div style="margin-top: 120px;">
+                                <a href="images/despliegueProducto.png" data-lightbox="imagen" data-title='TAPON MICROVINO'>
+                                    <button class="btn boton-corcho">
+                                        <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                    </button>    
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <!-- PROVINO -->
+                <div class="card texto-card-tapon" id="card-tapon3" style="width: 20rem; height: 38rem; margin-left: 10px; margin-right:10px;">
+                    <!--<img src="images/taponNatural.jpg" class="card-img-top">-->
+                    <div class="card-body">
+                        <p class="card-title titulo-card-tapon"><b>TAP&Oacute;N PROVINO 2</b>
+                            <div class="subrayadoDoradoTapon"></div>
+                        </p>
+                        <br>
+                        Los tapones Provino 2 y 3 son tapones producidos a partir de corcho granulado, 
+                        desinfectados por el sistema ULTRa - Ultimate Line for TCA Removal by Almeida y 
+                        fabricados con la última tecnología de moldeo individual.  
+                        <br><br><br>
+                        <div style="display: flex; justify-content: space-between;">
+                            <img src="images/taponProvino2.png" style="width: 50%;">
+                            <div style="margin-top: 120px;">
+                                <a href="images/despliegueProducto.png" data-lightbox="imagen" data-title='TAPON PROVINO 2'>
+                                    <button class="btn boton-corcho">
+                                        <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                    </button>    
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <!-- PROVINO 3 -->
+                <div class="card texto-card-tapon" id="card-tapon4" style="width: 20rem; height: 38rem; margin-left: 10px; margin-right:10px;">
+                    <!--<img src="images/taponNatural.jpg" class="card-img-top">-->
+                    <div class="card-body">
+                        <p class="card-title titulo-card-tapon"><b>TAP&Oacute;N PROVINO 3</b>
+                            <div class="subrayadoDoradoTapon"></div>
+                        </p>
+                        <br>
+                        Los tapones  Provino 2 y Provino 3 ofrecen una capacidad de sellado ejemplar y un 
+                        rendimiento mecánico y sensorial que lo convierte en una referencia en el mercado de 
+                        tapones técnicos.
+ 
+                        <br><br><br><br>
+                        <div style="display: flex; justify-content: space-between;">
+                            <img src="images/taponProvino3.png" style="width: 50%;">
+                            <div style="margin-top: 120px;">
+                                <a href="images/despliegueProducto.png" data-lightbox="imagen" data-title='TAPON PROVINO 3'>
+                                    <button class="btn boton-corcho">
+                                        <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                    </button>    
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="productos_garantia_1" class="tarjeta-corcho" >
+            GARANT&Iacute;A INDIVIDUAL <b>NATURALES</b>
+            <div class="fondo-card-producto imagenes-productos" style="display:flex; 
+                justify-content: center;">
+                <div class="card texto-card-tapon" id="card-tapon5" style="width: 21rem; height: 40rem;">
+                    <img src="images/taponNatural.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title titulo-card-tapon"><b>TAP&Oacute;N NATURAL (ISA)</b>
+                            <div class="subrayadoDoradoTapon"></div>
+                        </p>
+                        <br>
+                        El proceso ISA (Análisis Sensorial Individual) permite una seguridad adicional, 
+                        eficaz en términos organolépticos, desviaciones sensoriales y TCA.       
+                        <br>
+                        <br><br><br><br>
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="#productos" class="btn boton-corcho-atras" onclick="inicioProductos();">
+                                <i class="bi bi-arrow-left" style="color: white; font-size: 1.6rem;"></i>
+                            </a>
+                            <a href="images/despliegueProducto.png" data-lightbox="imagen" data-title='TAPON NATURAL (ISA)'>
+                                <button class="btn boton-corcho">
+                                    <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                </button>    
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productos_garantia_2" class="tarjeta-corcho">
+            GARANT&Iacute;A INDIVIDUAL <b>T&Eacute;CNICOS</b>
+            <div class="fondo-card-producto imagenes-productos" style="display:flex; 
+                justify-content: center;">
+                <!-- PROVINO 5 -->
+                <div class="card texto-card-tapon" id="card-tapon6" style="width: 20rem; height: 38rem; margin-left: 10px; margin-right:10px;">
+                    <!--<img src="images/taponNatural.jpg" class="card-img-top">-->
+                    <div class="card-body">
+                        <p class="card-title titulo-card-tapon"><b>TAP&Oacute;N PROVINO 5</b>
+                            <div class="subrayadoDoradoTapon"></div>
+                        </p>
+                        <br>
+                        Tapones microgranulados de primera calidad para la conservación de vinos hasta 5 años 
+                        en botella. <br>
+                        Producido a partir de corcho granulado fino, desinfectado por el sistema ULTRa - Ultimate 
+                        Line for TCA Removal by Almeida y fabricado con la última tecnología de moldeo individual. 
+                        <br>
+                        <div style="display: flex; justify-content: space-between;">
+                            <img src="images/taponProvino5.png" style="width: 50%;">
+                            <div style="margin-top: 120px;">
+                                <a href="images/despliegueProducto.png" data-lightbox="imagen" data-title='TAPON PROVINO 5'>
+                                    <button class="btn boton-corcho">
+                                        <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                    </button>    
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
+
         <a name="contacto"></a>
         <div class="linea-iconos-contacto">
             <a href="https://wa.me/5492613359455" target="_blank">
@@ -201,23 +397,8 @@
 </div> <!-- fin container fluid -->
 
 
-<!-- para la navbar -->
-<script>            
-    function openNav() {
-      //document.getElementById("mySidebar").style.width = "35%";
-      document.getElementById("mySidebar").style.display = "block";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidebar").style.display = "none";
-    }   
-
-    function mostrar(){
-        document.getElementById('obj').style.display = 'block';
-    }
-
-</script>
-
+<script src="js/pibsa.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
 
 </body>
 
