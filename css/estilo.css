@@ -70,371 +70,365 @@ body {
   width:50%;
 }
 
-/*.logo-home {
-    position: absolute;
-    top: 0px;
-    left: 120px;
-    height: 168px;    
-  }
-
-  /*.ARG {
-    position: absolute; 
-    top: 250px; 
-    left: 100px; 
-    height: 165px;
-  }*/
-
-  .texto-home {
-    position: absolute;
-    top: 340px;
-    left: 120px; 
-    font-family: Playfair-Regular; 
-    font-size: 2.7rem; 
-    line-height: 1.1;
-  }
-
-  .subtexto-home {
-    position: absolute;
-    top: 500px;
-    left: 120px; 
-    font-family: Montserrat-Regular; 
-    font-size: 1rem; 
-    line-height: 1.2;
-    letter-spacing: 2px;
-  }
-
-  .subsubtexto-home {
-    position: absolute;
-    top: 530px;
-    left: 120px; 
-    font-family: Montserrat-Regular; 
-    font-size: 0.8rem; 
-    line-height: 1.2;
-  }
-
-  .boton-argentina {
-    position: absolute;
-    top: 600px;
-    left: 120px;
-    width: 200px;
-    background-color: rgb(36, 34, 34);
-    font-family: Montserrat-Regular; 
-    color: white !important;
-  }
-
-   
-  .boton-argentina:focus {
-    outline:none !important;
-    box-shadow: none !important;
-  }
-
-  .boton-argentina:hover {
-    outline:none !important;
-    box-shadow: none !important;
-  }
-
-  .boton-portugal {
-    position: absolute;
-    top: 600px;
-    left: 370px;
-    width: 200px;
-    background-color: rgb(204, 196, 196);
-    font-family: Montserrat-Regular; 
-    color: black !important;    
-  }
- 
-  .boton-portugal:focus {
-    background-color: rgb(170, 157, 157);
-    color: white !important;
-    outline:none !important;
-    box-shadow: none !important;
-  }
-
-  .boton-portugal:hover {
-    background-color: rgb(170, 157, 157);
-    color: white !important;
-    outline:none !important;
-    box-shadow: none !important;
-  }
-
-  .linea-redes-home {
-    position: absolute;
-    top: 700px;
-    left: 120px;    
-    font-family: Montserrat-Regular; 
-    font-size: 1.1rem; 
-    color: gray;
-  }
-
-  .somos {
-    background-image: url('../images/fondoSomos.png') !important;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 130px;
-    background-color: #f2f2f2;
-  }
-
-
-
-  .barra-somos {
-    background-color: #cabcae; 
-    height: 150px; 
-    font-family: 'Montserrat-ExtraLight', sans-serif ;
-    font-size: 3.5rem;
-    text-align: center;
-    padding-top: 2%;
-    color: aliceblue;
-  }
-
-
-  .subrayadoDoradoSomos {
-    background-image: linear-gradient(to right, #a4784a,#dbb183, #a4784a);
-    height: 2px;
-    max-width: 13%;
-    margin: 1px auto 0 auto;
-    padding: 0;
-  }
-
-  .logo-somos {
-    margin-top:70px; 
-    text-align: center;
-  }
-
-  .logo-AA {
-    margin-top:40px; 
-    text-align: center;
-  }
-
-  .texto-somos-1 {
-    margin-top: 40px; 
-    font-family: Playfair-Regular; 
-    font-size: 1.3rem; 
-    text-align: center; 
-    line-height: 1.2;
-  }
-
-  .texto-somos-2 {
-    margin-top: 5px; 
-    font-family: Montserrat-Light; 
-    font-size: 1.3rem; 
-    text-align: center; 
-    line-height: 1.2;
-  }
-
-  .barra-productos {
-    background-color: transparent; 
-    height: 150px; 
-    font-family: 'Montserrat-ExtraLight', sans-serif ;
-    font-size: 3.5rem;
-    text-align: center;
-    padding-top: 2%;
-    color: aliceblue;   
-  }
-
-  .barra-flecha {
-    text-align: center; 
-    padding-top: 40px; 
-    padding-bottom: 40px;
-  }
-
-  .video_play {
-    width:1000px !important;
-  }
-
-  .alto_imagen_1 {
-    height: 80px;
-  }
-
-  .alto_imagen_2 {
-    height: 50px;
-  }
-
-  .alto_imagen_3 {
-    height: 90px;
-  }
-
-  .productosYcontacto {
-    background-image: url('../images/fondo4_ProductosContacto.png') !important;
-    background-repeat: no-repeat;
-    background-size: 100%;    
-  }
-
-  .titulo-productos {
-    text-decoration: none;
-  }
-
-  .titulo-productos:hover {
-    text-decoration: none;
-    color: aliceblue;   
-  }
-
-
-  .cuadrado-standard {
-    margin: 80px; 
-    width:400px; 
-    height: 400px;  
-    background-color: #cabcae; 
-    font-size: 2.2rem; 
-    line-height: 2.5rem;
-    color: aliceblue; 
-    font-family: 'Montserrat-Light', sans-serif ;
-    padding-top: 12%;   
-    padding-bottom: 13%; 
-    border: 5px solid;
-    border-image: linear-gradient(45deg, #a4784a,#dbb183, #a4784a) 1;
-    
-    /*border-radius: 5px;*/
-  }
-
-  .titulo-standard {
-    text-decoration: none;    
-  }
-
-  .titulo-standard:hover {
-    color:rgb(54, 52, 52) !important;
-    font-weight: bold;
-  }
-
-  .cuadrado-garantia {
-    margin: 80px; 
-    width:400px; 
-    height: 400px; 
-    background-color: #cabcae; 
-    font-size: 2.2rem; 
-    line-height: 2.5rem;
-    color: aliceblue; 
-    font-family: 'Montserrat-Light', sans-serif ;
-    padding-top: 12%;   
-    padding-bottom: 11%; 
-    border: 5px solid;
-    border-image: linear-gradient(45deg, #a4784a,#dbb183, #a4784a) 1;
-  }
-
-  .titulo-garantia {
-    text-decoration: none;
-  }
-
-  .titulo-garantia:hover {
-    color:rgb(54, 52, 52) !important;
-    font-weight: bold;
-  }
-
-  .pi {
-    animation-name: pi-animation;
-    animation-duration: 3s;
-    animation: pi-animation 3s;
-    animation-timing-function: ease-out;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes pi-animation {
-    
-    0%{ margin-top: 0;}
-    100% {margin-top: -30px;}
-  }
-  
-  .sub-links {
-    animation-name: sub-animation;
-    animation-duration: 2s;
-    animation: sub-animation 2s;
-    animation-timing-function: ease-out; 
-  }
-  
-  @keyframes sub-animation {
-    
-    0%{ color: transparent;}
-    30%{ color: transparent;}
-    60%{ color: transparent;}
-    100% { color: aliceblue;}
-  }
-
-  .link-cuadrado-producto {
-    font-size: 1.2rem !important; 
-    text-decoration: none;
-
-  }
-
-  .link-cuadrado-producto:hover {
-    font-size: 1.2rem !important; 
-    text-decoration: none;
-    color:rgb(54, 52, 52) !important;    
-  }
-
-  .flecha-atras:hover {
-    color: #dbb183;
-  }
-
-  .imagenes-productos {    
-    padding-top: 20px;
-  }
-
-  .imagen-tapon {
-    width:240px;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-
-  .fondo-card-producto {
-    height: 600px;      
-  }
-
-  @keyframes fade_in_show {
-    0% {
-         opacity: 0;
-         transform: scale(0)
-    }
-
-    100% {
-         opacity: 1;
-         transform: scale(1)
-    }
+.texto-home {
+  position: absolute;
+  top: 340px;
+  left: 120px; 
+  font-family: Playfair-Regular; 
+  font-size: 2.7rem; 
+  line-height: 1.1;
 }
 
-  .tarjeta-corcho {
-    display:flex; 
-    justify-content: center; 
-    color: aliceblue;
-    font-family: 'Montserrat-Light', sans-serif ;
-    font-size: 1.7rem;
-    letter-spacing: 2px;
+.subtexto-home {
+  position: absolute;
+  top: 500px;
+  left: 120px; 
+  font-family: Montserrat-Regular; 
+  font-size: 1rem; 
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.subsubtexto-home {
+  position: absolute;
+  top: 530px;
+  left: 120px; 
+  font-family: Montserrat-Regular; 
+  font-size: 0.8rem; 
+  line-height: 1.2;
+}
+
+.boton-argentina {
+  position: absolute;
+  top: 600px;
+  left: 120px;
+  width: 200px;
+  background-color: rgb(36, 34, 34);
+  font-family: Montserrat-Regular; 
+  color: white !important;
+}
+
+  
+.boton-argentina:focus {
+  outline:none !important;
+  box-shadow: none !important;
+}
+
+.boton-argentina:hover {
+  outline:none !important;
+  box-shadow: none !important;
+}
+
+.boton-portugal {
+  position: absolute;
+  top: 600px;
+  left: 370px;
+  width: 200px;
+  background-color: rgb(204, 196, 196);
+  font-family: Montserrat-Regular; 
+  color: black !important;    
+}
+
+.boton-portugal:focus {
+  background-color: rgb(170, 157, 157);
+  color: white !important;
+  outline:none !important;
+  box-shadow: none !important;
+}
+
+.boton-portugal:hover {
+  background-color: rgb(170, 157, 157);
+  color: white !important;
+  outline:none !important;
+  box-shadow: none !important;
+}
+
+.linea-redes-home {
+  position: absolute;
+  top: 700px;
+  left: 120px;    
+  font-family: Montserrat-Regular; 
+  font-size: 1.1rem; 
+  color: gray;
+}
+
+.somos {
+  background-image: url('../images/fondoSomos.png') !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 130px;
+  background-color: #f2f2f2;
+}
+
+
+
+.barra-somos {
+  background-color: #cabcae; 
+  height: 150px; 
+  font-family: 'Montserrat-ExtraLight', sans-serif ;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 2%;
+  color: aliceblue;
+}
+
+
+.subrayadoDoradoSomos {
+  background-image: linear-gradient(to right, #a4784a,#dbb183, #a4784a);
+  height: 2px;
+  max-width: 13%;
+  margin: 1px auto 0 auto;
+  padding: 0;
+}
+
+.logo-somos {
+  margin-top:70px; 
+  text-align: center;
+}
+
+.logo-AA {
+  margin-top:40px; 
+  text-align: center;
+}
+
+.texto-somos-1 {
+  margin-top: 40px; 
+  font-family: Playfair-Regular; 
+  font-size: 1.3rem; 
+  text-align: center; 
+  line-height: 1.2;
+}
+
+.texto-somos-2 {
+  margin-top: 5px; 
+  font-family: Montserrat-Light; 
+  font-size: 1.3rem; 
+  text-align: center; 
+  line-height: 1.2;
+}
+
+.barra-productos {
+  background-color: transparent; 
+  height: 150px; 
+  font-family: 'Montserrat-ExtraLight', sans-serif ;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 2%;
+  color: aliceblue;   
+}
+
+.barra-flecha {
+  text-align: center; 
+  padding-top: 40px; 
+  padding-bottom: 40px;
+}
+
+.video_play {
+  width:1000px !important;
+}
+
+.alto_imagen_1 {
+  height: 80px;
+}
+
+.alto_imagen_2 {
+  height: 50px;
+}
+
+.alto_imagen_3 {
+  height: 90px;
+}
+
+.productosYcontacto {
+  background-image: url('../images/fondo4_ProductosContacto.png') !important;
+  background-repeat: no-repeat;
+  background-size: 100%;    
+}
+
+.titulo-productos {
+  text-decoration: none;
+}
+
+.titulo-productos:hover {
+  text-decoration: none;
+  color: aliceblue;   
+}
+
+
+.cuadrado-standard {
+  margin: 80px; 
+  width:400px; 
+  height: 400px;  
+  background-color: #cabcae; 
+  font-size: 2.2rem; 
+  line-height: 2.5rem;
+  color: aliceblue; 
+  font-family: 'Montserrat-Light', sans-serif ;
+  padding-top: 12%;   
+  padding-bottom: 13%; 
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #a4784a,#dbb183, #a4784a) 1;
+  
+  /*border-radius: 5px;*/
+}
+
+.titulo-standard {
+  text-decoration: none;    
+}
+
+.titulo-standard:hover {
+  color:rgb(54, 52, 52) !important;
+  font-weight: bold;
+}
+
+.cuadrado-garantia {
+  margin: 80px; 
+  width:400px; 
+  height: 400px; 
+  background-color: #cabcae; 
+  font-size: 2.2rem; 
+  line-height: 2.5rem;
+  color: aliceblue; 
+  font-family: 'Montserrat-Light', sans-serif ;
+  padding-top: 12%;   
+  padding-bottom: 11%; 
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #a4784a,#dbb183, #a4784a) 1;
+}
+
+.titulo-garantia {
+  text-decoration: none;
+}
+
+.titulo-garantia:hover {
+  color:rgb(54, 52, 52) !important;
+  font-weight: bold;
+}
+
+.pi {
+  animation-name: pi-animation;
+  animation-duration: 3s;
+  animation: pi-animation 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pi-animation {
+  
+  0%{ margin-top: 0;}
+  100% {margin-top: -30px;}
+}
+
+.sub-links {
+  animation-name: sub-animation;
+  animation-duration: 2s;
+  animation: sub-animation 2s;
+  animation-timing-function: ease-out; 
+}
+
+@keyframes sub-animation {
+  
+  0%{ color: transparent;}
+  30%{ color: transparent;}
+  60%{ color: transparent;}
+  100% { color: aliceblue;}
+}
+
+.link-cuadrado-producto {
+  font-size: 1.2rem !important; 
+  text-decoration: none;
+
+}
+
+.link-cuadrado-producto:hover {
+  font-size: 1.2rem !important; 
+  text-decoration: none;
+  color:rgb(54, 52, 52) !important;    
+}
+
+.flecha-atras:hover {
+  color: #dbb183;
+}
+
+.espacio-bajo-titulo {
+  display:flex; 
+  justify-content: center;    
+  padding-top: 40px;
+}
+
+
+@keyframes fade_in_show {
+  0% {
+        opacity: 0;
+        transform: scale(0)
   }
 
-  .texto-card-tapon {
-    font-family: 'Montserrat-Regular';
-    color:black;
-    font-size: 1rem;
-    text-align: start !important;
+  100% {
+        opacity: 1;
+        transform: scale(1)
   }
+}
 
-  .titulo-card-tapon {
-    font-family: 'Playfair-Regular';
-    color:black;
-    font-size: 1.5rem;
-    text-align: start !important;
-  }
 
-  .subrayadoDoradoTapon {
-    background-image: linear-gradient(to right, #a4784a,#dbb183, #FFFFFF);
-    height: 2px;
-    max-width: 30%;
-    margin: 1px 0 auto;
-    padding: 0;
-  }
+/***** TARJETA BLANCA ********/
+.contenedor-tarjeta-corcho {
+  display:flex; 
+  justify-content: center; 
+  color: aliceblue;
+  font-family: 'Montserrat-Light', sans-serif ;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+}
 
-  .boton-corcho {
-    width: 100px;
-    background-color: #cabcae; 
-    font-family: 'Montserrat-Regular'; 
-    color: black !important;        
-  }
+.tarjeta-blanca {
+    width: 20rem; 
+    height: 36rem; 
+    margin-left:2rem !important; 
+    margin-right:2rem !important;
+    padding: 1rem;
+}
 
-  .boton-corcho-atras {
-    width: 50px;
-    background-color: #cabcae; 
-    font-family: 'Montserrat-Regular'; 
-    color: black !important;            
-  }
+
+.texto-tarjeta-blanca {
+  font-family: 'Montserrat-Regular';
+  color:black;
+  font-size: 1rem;
+  text-align: start !important;
+}
+
+.titulo-tarjeta-blanca {
+  font-family: 'Playfair-Regular';
+  color:black;
+  font-size: 1.5rem;
+  text-align: start !important;
+}
+
+.subrayadoDoradoTapon {
+  background-image: linear-gradient(to right, #a4784a,#dbb183, #FFFFFF);
+  height: 2px;
+  max-width: 30%;
+  margin: 1px 0 auto;
+  padding: 0;
+}
+
+.footer-tarjeta-blanca {
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom:10px; 
+  border:0px; 
+  background-color: white;
+}
+
+.boton-corcho {
+  width: 100px;
+  background-color: #cabcae; 
+  font-family: 'Montserrat-Regular'; 
+  color: black !important;        
+}
+
+
+  /**** FICHA ****/
 
   .ficha {
     background-image: url('../images/fondoFicha.png') !important;
@@ -483,7 +477,7 @@ body {
     padding-right: 10%;
     }
   
-       /*--------- CONTACTO -----------*/
+  /*--------- CONTACTO -----------*/
 
   .linea-iconos-contacto {
     text-align: center;
@@ -504,19 +498,17 @@ body {
     color: #242222;
   }
 
-
   .icono-contacto {
     width:45px;
     height: 45px;
   }
-
   
   .icono-contacto:hover {
     color:#eeb490;
   }
 
   .separador-contacto {
-    height: 850px;
+    height: 950px;
   }
 
   .zoom {
@@ -527,64 +519,65 @@ body {
      transform: scale(1);      
   }
 
-.sidebar {
-  width: 350px;
-  font-family: 'Montserrat-Regular', sans-serif ;
-  opacity: 0.9;
-  display:none; 
-  padding-top:80px; 
-  right:0; 
-  z-index:2; 
-}
+  /**** SIDEBAR *****/
+  .sidebar {
+    width: 350px;
+    font-family: 'Montserrat-Regular', sans-serif ;
+    opacity: 0.9;
+    display:none; 
+    padding-top:80px; 
+    right:0; 
+    z-index:2; 
+  }
 
-.sidebar-burger {
-  font-size: 2.2rem;
-  padding: 8px 20px;
-  color:#c4b3a4;
-}
+  .sidebar-burger {
+    font-size: 2.2rem;
+    padding: 8px 20px;
+    color:#c4b3a4;
+  }
 
-.sidebar-burger:hover {
-  color:#f5c9ae !important;
-  background-color:#000!important;
-}
+  .sidebar-burger:hover {
+    color:#f5c9ae !important;
+    background-color:#000!important;
+  }
 
-.sidebar-icono-close {
-  font-size: 2.2rem;
-  color:#c4b3a4;
-  padding:20 12px;   
-}
+  .sidebar-icono-close {
+    font-size: 2.2rem;
+    color:#c4b3a4;
+    padding:20 12px;   
+  }
 
-.sidebar-icono-close:hover {
-  color:#f5c9ae !important;
-  background-color:#000!important;
-  font-weight: bold; 
-}
-    
-.sidebar-item {
-  font-family: 'Montserrat-Regular', sans-serif ;
-  font-size: 1rem;  
-}
+  .sidebar-icono-close:hover {
+    color:#f5c9ae !important;
+    background-color:#000!important;
+    font-weight: bold; 
+  }
+      
+  .sidebar-item {
+    font-family: 'Montserrat-Regular', sans-serif ;
+    font-size: 1rem;  
+  }
 
-.sidebar-item::after{
-  font-family: 'Montserrat-Regular', sans-serif ;
-  font-size: 1rem;  
-  display:block;
-  content: '';
-  border-bottom: solid 2px #c4b3a4;  
-  transform: scaleX(0);  
-  transition: transform 800ms ease-in-out;
-}
+  .sidebar-item::after{
+    font-family: 'Montserrat-Regular', sans-serif ;
+    font-size: 1rem;  
+    display:block;
+    content: '';
+    border-bottom: solid 2px #c4b3a4;  
+    transform: scaleX(0);  
+    transition: transform 800ms ease-in-out;
+  }
 
-.sidebar-item:hover:after {
-  transform: scaleX(1);
-}
+  .sidebar-item:hover:after {
+    transform: scaleX(1);
+  }
 
-.sidebar-item:hover {
-  font-family: 'Montserrat-Regular', sans-serif ;  
-  font-weight: bold;
-  color:#eeb490 !important;
-  background-color:#000!important;
-}
+  .sidebar-item:hover {
+    font-family: 'Montserrat-Regular', sans-serif ;  
+    font-weight: bold;
+    color:#eeb490 !important;
+    background-color:#000!important;
+  }
 
 
 /* ----------- CELULAR ----------------------*/
@@ -760,13 +753,12 @@ body {
     font-size: 0.7rem !important;     
   }
 
-  .imagenes-productos {
-    text-align:center; 
-    padding-top: 5px;
+  .espacio-bajo-titulo {
+    padding-top: 20px;
   }
 
   
-  .tarjeta-corcho {
+  .contenedor-tarjeta-corcho {
     display:flex; 
     justify-content: center; 
     color: aliceblue;
@@ -918,7 +910,8 @@ body {
     width: 500px; 
     height: 500px;     
     font-size: 3.8rem; 
-    padding-top: 210px;    
+    padding-top: 210px;   
+    line-height: 4rem; 
   }
 
   .cuadrado-garantia {
@@ -927,10 +920,20 @@ body {
     height: 500px; 
     font-size: 3.8rem; 
     padding-top: 170px;  
+    line-height: 4rem;
   }
 
   .link-cuadrado-producto {
     font-size: 2rem !important;     
+  }
+
+  
+  .espacio-bajo-titulo {
+    padding-top: 40px;
+  }
+
+  .separador-contacto {
+    height: 1450px;
   }
 
 
