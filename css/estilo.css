@@ -175,6 +175,7 @@ body {
   }
 
 
+
   .barra-somos {
     background-color: #cabcae; 
     height: 150px; 
@@ -268,24 +269,100 @@ body {
   }
 
 
-  .cuadrado-producto {
+  .cuadrado-standard {
+    margin: 80px; 
+    width:400px; 
+    height: 400px;  
+    background-color: #cabcae; 
+    font-size: 2.2rem; 
+    line-height: 2.5rem;
+    color: aliceblue; 
+    font-family: 'Montserrat-Light', sans-serif ;
+    padding-top: 12%;   
+    padding-bottom: 13%; 
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #a4784a,#dbb183, #a4784a) 1;
+    
+    /*border-radius: 5px;*/
+  }
+
+  .titulo-standard {
+    text-decoration: none;    
+  }
+
+  .titulo-standard:hover {
+    color:rgb(54, 52, 52) !important;
+    font-weight: bold;
+  }
+
+  .cuadrado-garantia {
     margin: 80px; 
     width:400px; 
     height: 400px; 
     background-color: #cabcae; 
     font-size: 2.2rem; 
+    line-height: 2.5rem;
     color: aliceblue; 
     font-family: 'Montserrat-Light', sans-serif ;
-    padding-top: 10%;
+    padding-top: 12%;   
+    padding-bottom: 11%; 
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #a4784a,#dbb183, #a4784a) 1;
+  }
+
+  .titulo-garantia {
+    text-decoration: none;
+  }
+
+  .titulo-garantia:hover {
+    color:rgb(54, 52, 52) !important;
+    font-weight: bold;
+  }
+
+  .pi {
+    animation-name: pi-animation;
+    animation-duration: 3s;
+    animation: pi-animation 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes pi-animation {
+    
+    0%{ margin-top: 0;}
+    100% {margin-top: -30px;}
+  }
+  
+  .sub-links {
+    animation-name: sub-animation;
+    animation-duration: 2s;
+    animation: sub-animation 2s;
+    animation-timing-function: ease-out; 
+  }
+  
+  @keyframes sub-animation {
+    
+    0%{ color: transparent;}
+    30%{ color: transparent;}
+    60%{ color: transparent;}
+    100% { color: aliceblue;}
   }
 
   .link-cuadrado-producto {
     font-size: 1.2rem !important; 
     text-decoration: none;
+
   }
 
-  .link-cuadrado-producto:hover {      
-    color:rgb(54, 52, 52) !important;
+  .link-cuadrado-producto:hover {
+    font-size: 1.2rem !important; 
+    text-decoration: none;
+    color:rgb(54, 52, 52) !important;    
+  }
+
+  .flecha-atras:hover {
+    color: #dbb183;
   }
 
   .imagenes-productos {    
@@ -299,7 +376,7 @@ body {
   }
 
   .fondo-card-producto {
-    height: 600px;    
+    height: 600px;      
   }
 
   @keyframes fade_in_show {
@@ -359,6 +436,55 @@ body {
     color: black !important;            
   }
 
+  .ficha {
+    background-image: url('../images/fondoFicha.png') !important;
+    background-repeat: no-repeat;
+    background-size:contain ;  
+    background-color: #f2f2f2;
+  }
+
+  .ficha-tapon {
+    position: absolute;
+    top: 50px;
+    left: 570px;
+  }
+
+  .ficha-titulo {
+    padding-left: 5%; 
+    font-family: 'Playfair-Regular'; 
+    font-size: 2rem; 
+    text-align: start;    
+  }
+
+  .subrayadoDoradoFicha {
+    background-image: linear-gradient(to right, #a4784a,#dbb183, transparent);
+    height: 2px;
+    max-width: 30%;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 5%;
+  }
+
+  .ficha-texto1 {  
+    padding-left: 5%; 
+    font-family: 'Playfair-Italic'; 
+    font-size: 1.2rem;
+    text-align: start;
+    padding-right: 10%;
+  }
+
+  .ficha-texto2 {
+    padding-left: 5%; 
+    font-family: 'Montserrat-Light'; 
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align: start;
+    padding-right: 10%;
+    }
+  
+       /*--------- CONTACTO -----------*/
+
   .linea-iconos-contacto {
     text-align: center;
     color: #f2f2f2; 
@@ -390,7 +516,7 @@ body {
   }
 
   .separador-contacto {
-    height: 480px;
+    height: 850px;
   }
 
   .zoom {
@@ -607,7 +733,17 @@ body {
     padding-top: 5%;
   }
 
-  .cuadrado-producto {
+  .cuadrado-standard {
+    margin: 30px; 
+    width:26%; 
+    height: 40%;  
+    font-size: 1rem;     
+    padding-top: 13%;   
+    padding-bottom: 13%; 
+  }
+
+
+  .cuadrado-garantia {
     margin: 30px; 
     width:130px; 
     height: 130px; 
@@ -615,8 +751,10 @@ body {
     font-size: 1rem; 
     color: aliceblue; 
     font-family: 'Montserrat-Light', sans-serif ;
-    padding-top: 7%;
+    padding-top: 13%;   
+    padding-bottom: 13%; 
   }
+
 
   .link-cuadrado-producto {
     font-size: 0.7rem !important;     
@@ -625,6 +763,16 @@ body {
   .imagenes-productos {
     text-align:center; 
     padding-top: 5px;
+  }
+
+  
+  .tarjeta-corcho {
+    display:flex; 
+    justify-content: center; 
+    color: aliceblue;
+    font-family: 'Montserrat-Light', sans-serif ;
+    font-size: 1rem;
+    letter-spacing: 2px;    
   }
 
   .imagen-tapon {
@@ -644,7 +792,7 @@ body {
   }
 
   .separador-contacto {
-    height: 160px;
+    height: 250px;
   }
 
   .sidebar {
@@ -692,7 +840,7 @@ body {
 
 
 /*--------- PANTALLA MUY GRANDE ------------*/
-@media screen and (min-width:1400px) {
+@media screen and (min-width:1440px) {
 
   .sidebar-item {
     font-size: 1.5rem;
@@ -765,15 +913,20 @@ body {
   }
 
   
-  .cuadrado-producto {
-    margin: 100px; 
+  .cuadrado-standard {
+    margin-top: 180px; 
+    width: 500px; 
+    height: 500px;     
+    font-size: 3.8rem; 
+    padding-top: 210px;    
+  }
+
+  .cuadrado-garantia {
+    margin-top: 180px; 
     width: 500px; 
     height: 500px; 
-    background-color: #cabcae; 
     font-size: 3.8rem; 
-    color: aliceblue; 
-    font-family: 'Montserrat-Light', sans-serif ;
-    padding-top: 5%;
+    padding-top: 170px;  
   }
 
   .link-cuadrado-producto {
