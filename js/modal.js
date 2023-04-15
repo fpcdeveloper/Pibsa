@@ -1,5 +1,6 @@
 // Ventana modal
 var modal1 = document.getElementById("ventanaModal_1");
+var modal2 = document.getElementById("ventanaModal_2");
 var modal3 = document.getElementById("ventanaModal_3");
 var modal4 = document.getElementById("ventanaModal_4");
 var modal5 = document.getElementById("ventanaModal_5");
@@ -7,6 +8,7 @@ var modal6 = document.getElementById("ventanaModal_6");
 
 // Botón que abre el modal
 var boton1 = document.getElementById('abrirModal_1');
+var boton2 = document.getElementById('abrirModal_2');
 var boton3 = document.getElementById('abrirModal_3');
 var boton4 = document.getElementById('abrirModal_4');
 var boton5 = document.getElementById('abrirModal_5');
@@ -18,6 +20,9 @@ var boton6 = document.getElementById('abrirModal_6');
 // Cuando el usuario hace click en el botón, se abre la ventana
 boton1.addEventListener("click",function() {
     modal1.style.display = "block";
+});
+boton2.addEventListener("click",function() {
+    modal2.style.display = "block";
 });
 boton3.addEventListener("click",function() {
     modal3.style.display = "block";
@@ -43,6 +48,12 @@ if (event.target == modal1) {
     modal1.style.display = "none";
 }
 });
+
+window.addEventListener("click",function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+    });
 
 window.addEventListener("click",function(event) {
     if (event.target == modal3) {
