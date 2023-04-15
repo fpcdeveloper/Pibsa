@@ -248,7 +248,8 @@ body {
 .productosYcontacto {
   background-image: url('../images/fondo4_ProductosContacto.png') !important;
   background-repeat: no-repeat;
-  background-size: 100%;    
+  background-size: cover;
+  width: 100%;  
 }
 
 .barra-productos {
@@ -804,7 +805,7 @@ body {
   }
 
   .separador-contacto {
-    height: 250px;
+    height: 270px;
   }
 
   .sidebar {
