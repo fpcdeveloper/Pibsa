@@ -38,7 +38,7 @@
             <a href="#somos" class="w3-bar-item w3-button sidebar-item" 
                 onclick="closeNav()">&nbsp;SOMOS
             </a>
-            <a href="#video" class="w3-bar-item w3-button sidebar-item" 
+            <a href="#calidad" class="w3-bar-item w3-button sidebar-item" 
                 onclick="closeNav()">&nbsp;CALIDAD
             </a>
             <a href="#productos" class="w3-bar-item w3-button sidebar-item" 
@@ -112,12 +112,24 @@
    
     <!-- SOMOS -->
     <a name="somos"></a>
-    <div class="row somos"> 
-        <div class="barra-somos" style="justify-content: center;">
-            SOMOS               
-            <div class="subrayadoDoradoSomos"></div>
-        </div> 
-        
+    <!-- video-->
+    <div style="background-color: #cabcae;">
+        <div style="background-color: #cabcae; text-align: center; margin-top: 0px; margin-bottom: 0px; ">
+            <div class="barra-somos" >
+                SOMOS               
+                <div class="subrayadoDoradoSomos"></div>    
+            </div> 
+        </div>       
+        <div class="contenedor-video"> 
+            <div class="video">
+                <video autoplay loop muted playsinline class="video_play">
+                    <source src="images/CORTICA_v2.mp4" type="video/mp4">
+                </video>
+            </div>   
+        </div>
+    </div>       
+    <!-- texto fondo blanco -->
+    <div class="somos">
         <div class="logo-somos">  
             <img src="images/logo_dorado.png" style="width: 18%;">     
         </div>  
@@ -137,8 +149,8 @@
 
     </div>
 
-     <!-- VIDEO -->
-    <a name="video"></a>
+     <!-- CALIDAD -->
+    <a name="calidad"></a>
     <div>
         <div class="row todo-cero"> 
             <img src="images/barra_dorada.png" style="width: 100%; padding-left: 0px; padding-right: 0px;">
@@ -150,16 +162,16 @@
             </div>    
             <div style="padding-top:0px; padding-bottom: 30px; text-align: center;">
                 <video autoplay loop muted playsinline class="video_play">
-                    <source src="images/CORTICA_v2.mp4" type="video/mp4">
+                    <source src="images/LABORATORIO.mp4" type="video/mp4">
                 </video>
             </div>  
             <div style="text-align:center; margin-bottom: 40px;">
-                <img src="images/prov_logo_isa.png" class="alto_imagen_1">&nbsp;&nbsp;
-                <img src="images/prov_logo_provino.png" class="alto_imagen_2">&nbsp;&nbsp;
+                <img src="images/prov_logo_isa.png" class="alto_imagen_1">
+                <img src="images/prov_logo_provino.png" class="alto_imagen_3">
                 <img src="images/prov_logo_cork.png" class="alto_imagen_3">&nbsp;&nbsp;
                 <img src="images/prov_logo_apcer.png" class="alto_imagen_3">&nbsp;&nbsp;
                 <img src="images/prov_logo_IQNet.png" class="alto_imagen_3">&nbsp;&nbsp;
-                <img src="images/prov_logo_celiege_incompleto.png" class="alto_imagen_3">            
+                <img src="images/prov_logo_celiege.png" class="alto_imagen_2">            
             </div>  
         </div>
     </div>
@@ -316,6 +328,41 @@
                             </div>
                         </div>   
                     </div>
+
+                    <!-- Modal Standard Microvino -->
+                    <div id="ventanaModal_2" class="modalnew">
+                        <div class="contenido-modal">               
+                            
+                            <div class="container-fluid todo-cero"> 
+                                <div class="row ficha"> 
+                                    <div class="col col-8">
+                                        <!--<div class="ficha-tapon">
+                                            <img src="images/T_StandardNatural.png" style="width: 28%;">
+                                        </div>-->
+
+                                        <p class="ficha-titulo" style="margin-top: 10%;">TAP&Oacute;N MICROVINO</p>
+                                        <div class="subrayadoDoradoFicha"></div>                         
+                                        
+                                        <p class="ficha-texto1" style="margin-top: 5%;">
+                                            Se produce exclusivamente a partir de materias primas de alta calidad, 100% controladas,
+                                            mediante la tecnología de moldeo individual.                                            
+                                        </p>
+                                        <p class="ficha-texto2" style="margin-top: 5%;">
+                                            Este tap&oacute;n tiene una excelente capacidad mec&aacute;nica y una elevada neutralidad organol&eacute;ptica, 
+                                            que ofrece un gran rendimiento de embotellado.
+                                        </p>
+
+                                        <p class="ficha-texto2" style="margin-top: 5%;">
+                                            MEDIDAS: 44 x 24 mm
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 todo-cero" style="align-items: end;">
+                                        <img src="images/artisticaMicrovino.jpg" style="width: 100%;">
+                                    </div>
+                                </div>    
+                            </div> <!-- fin container fluid -->
+                        </div> <!-- fin contenido modal -->
+                    </div> <!-- fin modal 3 -->                    
 
                     <!-- PROVINO 2 --> 
                     <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon3">
