@@ -58,6 +58,7 @@ body {
   margin-right: 0px;
 }
 
+/* --- HOME --- */
 .barra-home {
   background-color: #cabcae; 
   height: 150px; 
@@ -220,17 +221,7 @@ body {
   text-align: center; 
   line-height: 1.2;
 }
-
-.barra-productos {
-  background-color: transparent; 
-  height: 150px; 
-  font-family: 'Montserrat-ExtraLight', sans-serif ;
-  font-size: 3.5rem;
-  text-align: center;
-  padding-top: 2%;
-  color: aliceblue;   
-}
-
+ /* --- CALIDAD --- */
 .barra-flecha {
   text-align: center; 
   padding-top: 40px; 
@@ -253,10 +244,21 @@ body {
   height: 90px;
 }
 
+/* --- PRODUCTOS ---*/
 .productosYcontacto {
   background-image: url('../images/fondo4_ProductosContacto.png') !important;
   background-repeat: no-repeat;
   background-size: 100%;    
+}
+
+.barra-productos {
+  background-color: transparent; 
+  height: 150px; 
+  font-family: 'Montserrat-ExtraLight', sans-serif ;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 2%;
+  color: aliceblue;   
 }
 
 .titulo-productos {
@@ -267,7 +269,6 @@ body {
   text-decoration: none;
   color: aliceblue;   
 }
-
 
 .cuadrado-standard {
   margin: 80px; 
@@ -282,8 +283,6 @@ body {
   padding-bottom: 13%; 
   border: 5px solid;
   border-image: linear-gradient(45deg, #a4784a,#dbb183, #a4784a) 1;
-  
-  /*border-radius: 5px;*/
 }
 
 .titulo-standard {
@@ -384,6 +383,10 @@ body {
   }
 }
 
+.contenedor-sublinks {
+  line-height: 2.5rem; 
+  margin-top: 10px;
+}
 
 /***** TARJETA BLANCA ********/
 .contenedor-tarjeta-corcho {
@@ -491,7 +494,7 @@ body {
     padding-right: 10%;
     }
   
-  /*--------- CONTACTO -----------*/
+  /*--- CONTACTO --- */
 
   .linea-iconos-contacto {
     text-align: center;
@@ -533,7 +536,7 @@ body {
      transform: scale(1);      
   }
 
-  /**** SIDEBAR *****/
+  /* --- SIDEBAR --- */
   .sidebar {
     width: 350px;
     font-family: 'Montserrat-Regular', sans-serif ;
@@ -594,10 +597,11 @@ body {
   }
 
 
-/* ----------- CELULAR ----------------------*/
+/*************** CELULAR *******************/
 
 @media screen and (max-width: 768px) {
 
+  /* --- HOME --- */ 
   .barra-home {
     height: 70px;    
   }
@@ -608,7 +612,6 @@ body {
     right: 0px; 
     width:50%;
   }
-
  
   .texto-home {
     position: absolute;
@@ -653,7 +656,6 @@ body {
     margin-top: 15px;
   }
   
-
   .linea-redes-home {
     display: none;
   }
@@ -711,7 +713,7 @@ body {
     line-height: 1.2;
   }
 
-  /* --- VIDEO LABORATORIO ---*/
+  /* --- CALIDAD ---*/
   .barra-flecha {
     padding-top: 20px; 
     padding-bottom: 20px;
@@ -741,28 +743,30 @@ body {
     padding-top: 5%;
   }
 
-  .cuadrado-standard {
-    margin: 30px; 
-    width:26%; 
-    height: 40%;  
-    font-size: 1rem;     
-    padding-top: 13%;   
-    padding-bottom: 13%; 
-  }
 
+  .cuadrado-standard {
+    margin: 25px; 
+    width:130px; 
+    height: 130px;  
+    font-size: 1rem; 
+    line-height: 1rem;
+    padding-top: 50px;   
+    /*padding-bottom: 5%;     */
+  }
 
   .cuadrado-garantia {
-    margin: 30px; 
+    margin: 25px; 
     width:130px; 
-    height: 130px; 
-    background-color: #cabcae; 
+    height: 130px;  
     font-size: 1rem; 
-    color: aliceblue; 
-    font-family: 'Montserrat-Light', sans-serif ;
-    padding-top: 13%;   
-    padding-bottom: 13%; 
+    line-height: 1.2rem;
+    padding-top: 45px;  
   }
 
+  .contenedor-sublinks {
+    line-height: 1.5rem; 
+    margin-top: 5px;
+  }
 
   .link-cuadrado-producto {
     font-size: 0.7rem !important;     
@@ -771,7 +775,6 @@ body {
   .espacio-bajo-titulo {
     padding-top: 20px;
   }
-
   
   .contenedor-tarjeta-corcho {
     display:flex; 
@@ -917,6 +920,12 @@ body {
   }
 
   /*------ SOMOS ------*/
+  .barra-somos {    
+    height: 200px; 
+    font-size: 4.2rem;    
+    padding-top: 70px;  
+  }
+
   .subrayadoDoradoSomos {    
     height: 2px;
     max-width: 9%;
@@ -942,38 +951,50 @@ body {
     margin-top:50px;     
   }
   
+  /* --- PRODUCTOS --- */
+  .barra-productos {    
+    height: 200px; 
+    font-size: 4.2rem;    
+    padding-top: 70px;  
+  }
+
   .cuadrado-standard {
-    margin-top: 180px; 
-    width: 500px; 
-    height: 500px;     
+    margin: 100px; 
+    width:600px; 
+    height: 600px;  
     font-size: 3.8rem; 
-    padding-top: 210px;   
-    line-height: 4rem; 
+    line-height: 4rem;
+    padding-top: 250px;       
   }
 
   .cuadrado-garantia {
-    margin-top: 180px; 
-    width: 500px; 
-    height: 500px; 
+    margin: 100px; 
+    width:600px; 
+    height: 600px;  
     font-size: 3.8rem; 
-    padding-top: 170px;  
-    line-height: 4rem;
+    line-height: 4.5rem;
+    padding-top: 210px;  
+  }
+
+  .contenedor-sublinks {
+    line-height: 3.5rem; 
+    margin-top: 20px;
   }
 
   .link-cuadrado-producto {
     font-size: 2rem !important;     
   }
-
   
   .espacio-bajo-titulo {
     padding-top: 40px;
   }
 
+  /* --- CONTACTO --- */
   .separador-contacto {
     height: 1450px;
   }
 
-
+  /* --- SIDEBAR --- */
   .sidebar-icono-close {
     font-size: 2.2rem;
     padding-top:20px;
