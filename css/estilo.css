@@ -462,14 +462,14 @@ body {
   }
 
   .barra-ficha {
-    height: 50px;
+    height: 60px;
     width: 100%;
     background-color: #cabcae; 
     padding: 2%;
     margin-top: 0px;   
     color: white; 
-    text-align: start;
-    font-size: 1.2rem;
+    text-align: end;
+    font-size: 1.3rem;
   }
 
   .ficha-titulo {
