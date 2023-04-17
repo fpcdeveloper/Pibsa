@@ -248,8 +248,8 @@ body {
 .productosYcontacto {
   background-image: url('../images/fondo4_ProductosContacto.png') !important;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;  
+  background-size: cover;    
+  height: 120vmax;
 }
 
 .barra-productos {
@@ -461,38 +461,66 @@ body {
     left: 570px;
   }
 
+  .barra-ficha {
+    height: 50px;
+    width: 100%;
+    background-color: #cabcae; 
+    padding: 2%;
+    margin-top: 0px;   
+    color: white; 
+    text-align: start;
+    font-size: 1.2rem;
+  }
+
   .ficha-titulo {
-    padding-left: 5%; 
+    padding-left: 8%; 
     font-family: 'Playfair-Regular'; 
     font-size: 2rem; 
     text-align: start;    
   }
 
   .subrayadoDoradoFicha {
-    background-image: linear-gradient(to right, #a4784a,#dbb183, transparent);
-    height: 2px;
+    background-image: linear-gradient(to right, #a4784a,#dbb183, #a4784a);
+    height: 7px;
     max-width: 30%;
     padding-top: 0px;
     margin-top: 0px;
-    margin-left: 5%;
+    
   }
 
   .ficha-texto1 {  
-    padding-left: 5%; 
+    padding-left: 8%; 
     font-family: 'Playfair-Italic'; 
-    font-size: 1.2rem;
-    text-align: start;
-    padding-right: 10%;
+    font-size: 1rem;
+    text-align: start;    
+    letter-spacing: 0.8px;
+    padding-right: 30%;
   }
 
   .ficha-texto2 {
-    padding-left: 5%; 
+    padding-left: 8%; 
     font-family: 'Montserrat-Light'; 
     font-weight: bold;
-    font-size: 1rem;
-    letter-spacing: 2px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
     text-align: start;
-    padding-right: 10%;
+    padding-right: 30%;
+    }
+
+    .ficha-titulo-calidad {
+      padding-left: 8%; 
+      font-family: 'Playfair-Bold'; 
+      font-size: 1rem;
+      text-align: start;
+      line-height: 0.5px;
+    }
+
+    .ficha-titulo-medidas {
+      padding-left: 12%; 
+      font-family: 'Playfair-Bold'; 
+      font-size: 1rem;
+      text-align: start;
+      line-height: 0.5px;
     }
   
   /*--- CONTACTO --- */
@@ -737,6 +765,14 @@ body {
   }
 
   /* --- PRODUCTOS ---- */
+  .productosYcontacto {
+    background-image: url('../images/fondo4_ProductosContacto.png') !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;  
+    height:67vmax;
+  }
+
   .barra-productos {
     background-color: transparent; 
     height: 70px;
@@ -805,7 +841,7 @@ body {
   }
 
   .separador-contacto {
-    height: 270px;
+    height: 0px;
   }
 
   .sidebar {
