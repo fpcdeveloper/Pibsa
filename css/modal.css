@@ -4,7 +4,7 @@
     z-index: 1; /* Se situará por encima de otros elementos de la página*/
     padding-top: 0px; /* El contenido estará situado a 20px de la parte superior */
     left: 0px;
-    top: 20px;
+    top: 5px;
     width: 100%; /* Ancho completo */
     height: 100%; /* Algura completa */
     overflow: auto; /* Se activará el scroll si es necesario */
