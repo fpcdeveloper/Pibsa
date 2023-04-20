@@ -5,6 +5,7 @@ var modal3 = document.getElementById("ventanaModal_3");
 var modal4 = document.getElementById("ventanaModal_4");
 var modal5 = document.getElementById("ventanaModal_5");
 var modal6 = document.getElementById("ventanaModal_6");
+var modal7 = document.getElementById("ventanaModal_7");
 
 // Botón que abre el modal
 var boton1 = document.getElementById('abrirModal_1');
@@ -13,6 +14,7 @@ var boton3 = document.getElementById('abrirModal_3');
 var boton4 = document.getElementById('abrirModal_4');
 var boton5 = document.getElementById('abrirModal_5');
 var boton6 = document.getElementById('abrirModal_6');
+var boton7 = document.getElementById('abrirModal_7');
 
 // Hace referencia al elemento <span> que tiene la X que cierra la ventana
 //var span = document.getElementsByClassName("cerrarModal_1")[0];
@@ -35,6 +37,9 @@ boton5.addEventListener("click",function() {
 });
 boton6.addEventListener("click",function() {
     modal6.style.display = "block";
+});
+boton7.addEventListener("click",function() {
+    modal7.style.display = "block";
 });
 
 // Si el usuario hace click en la x, la ventana se cierra
@@ -74,5 +79,10 @@ window.addEventListener("click",function(event) {
 window.addEventListener("click",function(event) {
     if (event.target == modal6) {
         modal6.style.display = "none";
+    }
+});
+window.addEventListener("click",function(event) {
+    if (event.target == modal7) {
+        modal7.style.display = "none";
     }
 });

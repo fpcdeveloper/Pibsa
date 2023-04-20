@@ -368,7 +368,7 @@ body {
 .espacio-bajo-titulo {
   display:flex; 
   justify-content: center;    
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 
@@ -402,9 +402,9 @@ body {
 .tarjeta-blanca {
     width: 20rem; 
     height: 36rem; 
-    margin-left:2rem !important; 
-    margin-right:2rem !important;
-    padding: 1rem;
+    margin-left:1rem !important; 
+    margin-right:1rem !important;
+    padding: 0.8rem;
     background-color: #F2F2F2;
 }
 
@@ -472,6 +472,7 @@ body {
     color: white; 
     text-align: end;
     font-size: 1.3rem;
+    opacity: 0.7;
   }
 
   .ficha-titulo {
@@ -531,10 +532,9 @@ body {
     text-align: center;
     color: #f2f2f2; 
     font-size: 3rem; 
-    letter-spacing: 10px;
+    letter-spacing: 30px;
     width:100%;
-    padding-top: 390px; 
-    /*padding-bottom: 500px;*/
+    padding-top: 28vmax;    
   }
 
   .link-icono-contacto {
@@ -564,7 +564,7 @@ body {
   }
 
   .zoom:hover {
-     transform: scale(1);      
+     transform: scale(1.5);      
   }
 
   /* --- SIDEBAR --- */
@@ -834,12 +834,12 @@ body {
 
 
    /* --- CONTACTO ---- */
-  .linea-iconos-contacto {
-    font-size: 1rem; 
-    letter-spacing: 5px;
-    padding-top: 130px;    
-    
+   .linea-iconos-contacto {
+    font-size: 0.2rem; 
+    letter-spacing: 15px;
+    padding-top: 12vmax;     
   }
+
 
   .icono-contacto {
     width:25px;
@@ -1033,10 +1033,22 @@ body {
   }
   
   .espacio-bajo-titulo {
-    padding-top: 40px;
+    padding-top: 100px;
+  }
+
+  .contenedor-tarjeta-corcho {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
   }
 
   /* --- CONTACTO --- */
+  
+  .linea-iconos-contacto {
+    font-size: 25px; 
+    letter-spacing: 35px;
+    padding-top: 28vmax;         
+  }
+
   .separador-contacto {
     height: 1450px;
   }
