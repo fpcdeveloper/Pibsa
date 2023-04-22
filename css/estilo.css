@@ -336,7 +336,7 @@ body {
 .productosYcontacto {
   background-image: url('../images/fondo4_ProductosContacto.png') !important;
   background-repeat: no-repeat;
-  background-size: cover;    
+  background-size: contain;    
   height: 120vmax;
 }
 
