@@ -175,111 +175,525 @@
     <!-- PRODUCTOS -->    
     <a name="productos"></a>    
     <div class="productosYcontacto" style="text-align: center;">
+        <div style="height: 65%;">
         
-        <div class="barra-productos">
-            <a href="#productos" class="titulo-productos" onclick="inicioProductos();">
-                PRODUCTOS</a>
-            <div class="subrayadoDoradoSomos"></div>
-        </div>
-        <!-- CUADRADOS -->
-        <a name="cuadrados"></a>
-        <div style="display:flex; justify-content: center;">
-            <div class="cuadrado-standard" id="cuadrado-1">
-                <a href="#cuadrados" id="link-std" onclick="moverLinkStd(); mostrarSubtitulosStandard();" 
-                    class="titulo-standard">
-                    STANDARD
-                </a>
-                <p class="pi" id="texto-link-std">STANDARD</p>    
-                <div class="contenedor-sublinks">
-                    <a href="#cuadrados" class="link-cuadrado-producto sub-links" 
-                        onclick="mostrarStandardNaturales();" id="link-standard-naturales">
-                        <b>NATURALES</b>
-                    </a>
-                    <a href="#cuadrados" class="link-cuadrado-producto sub-links" 
-                        onclick="mostrarStandardTecnicos();" id="link-standard-tecnicos">
-                        <b>T&Eacute;CNICOS</b>
-                    </a>      
-                </div>          
+            <div class="barra-productos">
+                <a href="#productos" class="titulo-productos" onclick="inicioProductos();">
+                    PRODUCTOS</a>
+                <div class="subrayadoDoradoSomos"></div>
             </div>
-            <div class="cuadrado-garantia" id="cuadrado-2">
-                <a href="#cuadrados" id="link-gind" onclick="moverLinkGInd(); mostrarSubtitulosGarantia();" 
-                    class="titulo-garantia">
-                    GARANT&Iacute;A<br>INDIVIDUAL
-                </a>
-                <p class="pi" id="texto-link-gind">GARANT&Iacute;A<br>INDIVIDUAL</p> 
-                <div class="contenedor-sublinks">
-                    <a href="#cuadrados" class="link-cuadrado-producto sub-links" 
-                        onclick="mostrarGarantiaNaturales();" id="link-garantia-naturales">
-                        <b>NATURALES (ISA)</b>
+            <!-- CUADRADOS -->
+            <a name="cuadrados"></a>
+            <div style="display:flex; justify-content: center;">
+                <div class="cuadrado-standard" id="cuadrado-1">
+                    <a href="#cuadrados" id="link-std" onclick="moverLinkStd(); mostrarSubtitulosStandard();" 
+                        class="titulo-standard">
+                        STANDARD
                     </a>
-                    <a href="#cuadrados" class="link-cuadrado-producto sub-links" 
-                        onclick="mostrarGarantiaTecnicos();" id="link-garantia-tecnicos">
-                        <b>T&Eacute;CNICOS (ULTRA)</b>
-                    </a>
+                    <p class="pi" id="texto-link-std">STANDARD</p>    
+                    <div class="contenedor-sublinks">
+                        <a href="#cuadrados" class="link-cuadrado-producto sub-links" 
+                            onclick="mostrarStandardNaturales();" id="link-standard-naturales">
+                            <b>NATURALES</b>
+                        </a>
+                        <a href="#cuadrados" class="link-cuadrado-producto sub-links" 
+                            onclick="mostrarStandardTecnicos();" id="link-standard-tecnicos">
+                            <b>T&Eacute;CNICOS</b>
+                        </a>      
+                    </div>          
                 </div>
-            </div>
-        </div> 
-
-        <!-- STANDARD NATURALES (1)-->        
-        <div id="productos_standard_1" class="contenedor-tarjeta-corcho">
-            <a href="#cuadrados" onclick="inicioProductos();">
-                <i class="bi bi-chevron-double-left flecha-atras"></i></a>
-                &nbsp;&nbsp;STANDARD <b>NATURALES</b>&nbsp;&nbsp;
-            <i class="bi bi-chevron-double-left" style="color:transparent;"></i>
-
-            <div class="espacio-bajo-titulo">
-
-                <!-- TAPON STANDARD NATURAL -->
-                <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon1">
-                    <div class="card-body">
-                        <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N NATURAL</b>
-                            <div class="subrayadoDoradoTapon"></div>
-                        </p>
-                        <BR>
-                        <p>Producto por excelencia para sellar vinos de alta calidad.</p>
+                <div class="cuadrado-garantia" id="cuadrado-2">
+                    <a href="#cuadrados" id="link-gind" onclick="moverLinkGInd(); mostrarSubtitulosGarantia();" 
+                        class="titulo-garantia">
+                        GARANT&Iacute;A<br>INDIVIDUAL
+                    </a>
+                    <p class="pi" id="texto-link-gind">GARANT&Iacute;A<br>INDIVIDUAL</p> 
+                    <div class="contenedor-sublinks">
+                        <a href="#cuadrados" class="link-cuadrado-producto sub-links" 
+                            onclick="mostrarGarantiaNaturales();" id="link-garantia-naturales">
+                            <b>NATURALES (ISA)</b>
+                        </a>
+                        <a href="#cuadrados" class="link-cuadrado-producto sub-links" 
+                            onclick="mostrarGarantiaTecnicos();" id="link-garantia-tecnicos">
+                            <b>T&Eacute;CNICOS (ULTRA)</b>
+                        </a>
                     </div>
-                    <div class="card-footer footer-tarjeta-blanca">
-                        <img src="images/taponStandardNatural.png" style="width: 35%;">                            
-                        <div style="margin-top: 100px;">
-                            <button type="button" class="btn boton-corcho" id="abrirModal_1">
-                                <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
-                            </button> 
+                </div>
+            </div> 
+
+            <!-- STANDARD NATURALES (1)-->        
+            <div id="productos_standard_1" class="contenedor-tarjeta-corcho">
+                <a href="#cuadrados" onclick="inicioProductos();">
+                    <i class="bi bi-chevron-double-left flecha-atras"></i></a>
+                    &nbsp;&nbsp;STANDARD <b>NATURALES</b>&nbsp;&nbsp;
+                <i class="bi bi-chevron-double-left" style="color:transparent;"></i>
+
+                <div class="espacio-bajo-titulo">
+
+                    <!-- TAPON STANDARD NATURAL -->
+                    <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon1">
+                        <div class="card-body">
+                            <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N NATURAL</b>
+                                <div class="subrayadoDoradoTapon"></div>
+                            </p>
+                            <BR>
+                            <p>Producto por excelencia para sellar vinos de alta calidad.</p>
                         </div>
-                    </div>   
+                        <div class="card-footer footer-tarjeta-blanca">
+                            <img src="images/taponStandardNatural.png" style="width: 35%;">                            
+                            <div style="margin-top: 100px;">
+                                <button type="button" class="btn boton-corcho" id="abrirModal_1">
+                                    <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                </button> 
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+                <!-- Modal Standard Natural -->
+                <div id="ventanaModal_1" class="modalnew">
+                    <div class="contenido-modal">               
+                        
+                        <div class="container-fluid todo-cero"> 
+                            <div class="row ficha"> 
+                                <div class="col-md-8 col-sm-12 todo-cero">
+                                    <div class="barra-ficha todo-cero">
+                                        STANDARD <b>NATURAL</b>
+                                    </div>                                
+                                    <div style="display:flex; justify-content: space-between;">
+                                        <div class="ficha-titulo">
+                                            TAP&Oacute;N <b>NATURAL</b>
+                                            <div class="subrayadoDoradoFicha"></div>  
+                                        </div>
+                                        <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
+                                            <img src="images/taponStandardNatural.png" style="width: 30%;">
+                                        </div>                                       
+                                    </div>                                                           
+                                    
+                                    <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
+                                        El tap&oacute;n de corcho natural es el producto por excelencia para sellar<br>
+                                        vinos de alta calidad.                                        
+                                    </p>
+                                    <p class="ficha-texto2" style="margin-top: 0%;">
+                                        Evidencia de caracter&iacute;sticas inigualables con alto rendimiento,<br>
+                                        mec&aacute;nico y organol&eacute;ptico.<br>
+                                        Los tapones naturales se someten al proceso de desinfecci&oacute;n CASA - CleanAdvancedSystem by Almeida, 
+                                        caracterizado por largos ciclos, alternos, de ventilaci&oacute;n forzada, temperatura y ozono, 
+                                        reduciendo significativamente el nivel de TCA y olores no deseados.
+                                    </p>
+                                    <p class="ficha-titulo-calidad" style="margin-top: 3%; ">
+                                        CALIDAD
+                                    </p>    
+                                    <p class="ficha-texto2" style="margin-top: 0%;">
+                                        PRIMERA&nbsp;&nbsp;|&nbsp;&nbsp;EXTRA&nbsp;&nbsp;|&nbsp;&nbsp;FLOR
+                                    </p>
+                                    <div style="display:flex; justify-content: space-between; padding-left: 0%;">
+                                        <div style="width:70%; margin-left: 0%;">                                            
+                                            <p class="ficha-titulo-medidas" style="margin-top: 2%;">
+                                                MEDIDAS                                    
+                                            </p>    
+                                            <p class="ficha-texto2" style="margin-top: 0%; padding-left:12%;">
+                                                45 x 24 mm&nbsp;&nbsp;|&nbsp;&nbsp;49 x 24 mm
+                                            </p>
+                                        </div>
+                                        <div class="ficha-AA">
+                                            <img src="images/AA.png" style="width: 15%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
+                                    <span class="close zoom">&times;</span>
+                                    <img src="images/artisticaStandardNatural.JPG" style="width: 100%;">
+                                </div>
+                            </div>    
+                        </div> <!-- fin container fluid -->
+                    </div> <!-- fin contenido modal -->
+                </div> <!-- fin modal 1 -->
+
+            </div> <!-- FIN STANDARD NATURALES (1)--> 
+
+            <!-- STANDARD TECNICOS (4)--> 
+            <div id="productos_standard_2" class="contenedor-tarjeta-corcho" >
+                <a href="#cuadrados" onclick="inicioProductos();">
+                    <i class="bi bi-chevron-double-left flecha-atras"></i></a>
+                    &nbsp;&nbsp;STANDARD <b>T&Eacute;CNICOS</b>&nbsp;&nbsp;
+                <i class="bi bi-chevron-double-left" style="color:transparent;"></i>
+                
+                <div class="espacio-bajo-titulo">
+
+                    <div class="card-group" style="margin-top: 10px;">
+
+                        <!-- MICROVINO --> 
+                        <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon2">
+                            <div class="card-body">
+                                <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N MICROVINO</b>
+                                    <div class="subrayadoDoradoTapon"></div>
+                                </p>
+                                <BR>
+                                <p>
+                                    Tapones producidos a partir de materias primas de alta calidad, 100% controlada, 
+                                    con altos rendimientos en el embotellado, recomendados para vinos entry level.
+                                </p>
+                            </div>
+                            <div class="card-footer footer-tarjeta-blanca">
+                                <img src="images/taponMicrovino.png" style="width: 35%;">                            
+                                <div style="margin-top: 100px;">
+                                    <button type="button" class="btn boton-corcho" id="abrirModal_2">
+                                        <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                    </button> 
+                                </div>
+                            </div>   
+                        </div>
+
+                        <!-- Modal Standard Microvino -->
+                        <div id="ventanaModal_2" class="modalnew">
+                            <div class="contenido-modal"> 
+                                
+                                <div class="container-fluid todo-cero"> 
+                                    <div class="row ficha"> 
+                                        <div class="col-md-8 col-sm-12 todo-cero">
+                                            <div class="barra-ficha todo-cero">
+                                                STANDARD <b>T&Eacute;CNICOS</b>
+                                            </div>                                
+                                            <div style="display:flex; justify-content: space-between;">
+                                                <div class="ficha-titulo">
+                                                    TAP&Oacute;N <b>MICROVINO</b>
+                                                    <div class="subrayadoDoradoFicha"></div>  
+                                                </div>
+                                                <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
+                                                    <img src="images/taponMicrovino.png" style="width: 30%;">
+                                                </div>                                       
+                                            </div>                                                           
+                                            
+                                            <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
+                                                Los tapones Microvino ofrecen una capacidad de sellado ejemplar, con propriedades 
+                                                mec&aacute;nicas y sensoriales, a precios econ&oacute;micos.                                         
+                                            </p>
+                                            <p class="ficha-texto2" style="margin-top: 2%;">
+                                                Este tap&oacute;n tiene una excelente capacidad mec&aacute;nica y 
+                                                una elevada neutralidad organol&eacute;ptica, ofreciendo un 
+                                                desempeño homog&eacute;neo en el embotellado.
+                                            </p>
+                                            <p class="ficha-titulo-calidad" style="margin-top: 3%; ">
+                                                MEDIDAS
+                                            </p>    
+                                            <p class="ficha-texto2" style="margin-top: 0%;">
+                                                44 x 24 mm
+                                            </p>
+                                            <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 5%;">
+                                                <div style="width:70%; margin-left: 0%;">                                            
+                                                    
+                                                </div>
+                                                <div class="ficha-AA">
+                                                    <img src="images/AA.png" style="width: 15%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
+                                            <span class="close zoom">&times;</span>
+                                            <img src="images/artisticaMicrovino.jpg" style="width: 100%;">
+                                        </div>
+                                    </div>    
+                                </div> <!-- fin container fluid -->
+                            </div> <!-- fin contenido modal -->
+                        </div> <!-- fin modal 3 -->                    
+
+                        <!-- PROVINO 2 --> 
+                        <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon3">
+                            <div class="card-body">
+                                <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N PROVINO 2</b>
+                                    <div class="subrayadoDoradoTapon"></div>
+                                </p>
+                                <BR>
+                                <p>Tapones producidos a partir de corcho granulado con elevada neutralidad organol&eacute;ptica.</p>                        
+                            </div>
+                            <div class="card-footer footer-tarjeta-blanca">
+                                <img src="images/taponProvino2.png" style="width: 35%;">                            
+                                <div style="margin-top: 100px;">
+                                    <button type="button" class="btn boton-corcho" id="abrirModal_3">
+                                        <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                    </button> 
+                                </div>
+                            </div>   
+                        </div>
+
+                        <!-- Modal Standard Provino 2 -->
+                        <div id="ventanaModal_3" class="modalnew">
+                            <div class="contenido-modal">  
+                                
+                                <div class="container-fluid todo-cero"> 
+                                    <div class="row ficha"> 
+                                        <div class="col-md-8 col-sm-12 todo-cero">
+                                            <div class="barra-ficha todo-cero">
+                                                STANDARD <b>T&Eacute;CNICOS</b>
+                                            </div>                                
+                                            <div style="display:flex; justify-content: space-between;">
+                                                <div class="ficha-titulo">
+                                                    TAP&Oacute;N <b>PROVINO 2</b>
+                                                    <div class="subrayadoDoradoFicha"></div>  
+                                                </div>
+                                                <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
+                                                    <img src="images/taponProvino2.png" style="width: 30%;">
+                                                </div>                                       
+                                            </div>                                                           
+                                            
+                                            <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
+                                                Los tapones Provino 2 son tapones producidos a partir de corcho 
+                                                granulado (0,5 - 2 mm), desinfectados por el sistema ULTRa - Ultimate Line for TCA Removal by Almeida 
+                                                y fabricados con la &uacute;ltima tecnolog&iacute;a de moldeo individual.                                                                                      
+                                            </p>
+                                            <p class="ficha-texto2" style="margin-top: 1%;">
+                                                Los tapones  Provino 2 ofrecen una capacidad de sellado ejemplar y un 
+                                                rendimiento mec&aacute;nico y sensorial que lo convierte en una referencia 
+                                                en el mercado de tapones t&eacute;cnicos. Una soluci&oacute;n inteligente 
+                                                y econ&oacute;mica para quienes apuestan por el rendimiento, la tradici&oacute;n 
+                                                y la sostenibilidad.                                                
+                                            </p>
+                                            
+                                            <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 4%;">
+                                                <div style="width:70%; margin-left: 2%;">                                            
+                                                    <p class="ficha-titulo-calidad" style="margin-top: 0%; ">
+                                                        MEDIDAS
+                                                    </p>    
+                                                    <p class="ficha-texto2" style="margin-top: 0%;">
+                                                        44 x 24 mm
+                                                    </p>                                                    
+                                                </div>
+                                                <div class="ficha-AA">
+                                                    <img src="images/AA.png" style="width: 15%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
+                                            <span class="close zoom">&times;</span>
+                                            <img src="images/artisticaProvino2.jpg" style="width: 100%;">
+                                        </div>
+                                    </div>    
+                                </div> <!-- fin container fluid -->                               
+                                
+                            </div> <!-- fin contenido modal -->
+                        </div> <!-- fin modal 3 -->
+
+                        <!-- PROVINO 3 -->
+                        <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon4">
+                            <div class="card-body">
+                                <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N PROVINO 3</b>
+                                    <div class="subrayadoDoradoTapon"></div>
+                                </p>
+                                <BR>
+                                <p>Tapones producidos a partir de corcho granulado con elevada neutralidad organol&eacute;ptica.</p>                        
+                            </div>
+                            <div class="card-footer footer-tarjeta-blanca">
+                                <img src="images/taponProvino3.png" style="width: 35%;">                            
+                                <div style="margin-top: 100px;">
+                                    <button type="button" class="btn boton-corcho" id="abrirModal_4">
+                                        <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                    </button> 
+                                </div>
+                            </div>   
+                        </div>
+
+                        <!-- Modal Standard Provino 3 -->
+                        <div id="ventanaModal_4" class="modalnew">
+                            <div class="contenido-modal">      
+                                
+                                <div class="container-fluid todo-cero"> 
+                                    <div class="row ficha"> 
+                                        <div class="col-md-8 col-sm-12 todo-cero">
+                                            <div class="barra-ficha todo-cero">
+                                                STANDARD <b>T&Eacute;CNICOS</b>
+                                            </div>                                
+                                            <div style="display:flex; justify-content: space-between;">
+                                                <div class="ficha-titulo">
+                                                    TAP&Oacute;N <b>PROVINO 3</b>
+                                                    <div class="subrayadoDoradoFicha"></div>  
+                                                </div>
+                                                <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
+                                                    <img src="images/taponProvino3.png" style="width: 30%;">
+                                                </div>                                       
+                                            </div>                                                           
+                                            
+                                            <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
+                                                Los tapones Provino 3 son tapones producidos a partir de corcho 
+                                                granulado (0,5 - 2 mm), desinfectados por el sistema ULTRa - Ultimate Line for TCA Removal by Almeida 
+                                                y fabricados con la &uacute;ltima tecnolog&iacute;a de moldeo individual.                                                                                      
+                                            </p>
+                                            <p class="ficha-texto2" style="margin-top: 1%;">
+                                                Los tapones  Provino 3 ofrecen una capacidad de sellado ejemplar y un 
+                                                rendimiento mec&aacute;nico y sensorial que lo convierte en una referencia 
+                                                en el mercado de tapones t&eacute;cnicos. Una soluci&oacute;n inteligente 
+                                                y econ&oacute;mica para quienes apuestan por el rendimiento, la tradici&oacute;n 
+                                                y la sostenibilidad.                                                
+                                            </p>
+                                            
+                                            <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 4%;">
+                                                <div style="width:70%; margin-left: 2%;">                                            
+                                                    <p class="ficha-titulo-calidad" style="margin-top: 0%; ">
+                                                        MEDIDAS
+                                                    </p>    
+                                                    <p class="ficha-texto2" style="margin-top: 0%;">
+                                                        44 x 24 mm
+                                                    </p>                                                    
+                                                </div>
+                                                <div class="ficha-AA">
+                                                    <img src="images/AA.png" style="width: 15%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
+                                            <span class="close zoom">&times;</span>
+                                            <img src="images/artisticaProvino3.jpg" style="width: 100%;">
+                                        </div>
+                                    </div>    
+                                </div> <!-- fin container fluid -->                                     
+                                
+                            </div> <!-- fin contenido modal -->
+                        </div> <!-- fin modal 4 -->
+                        
+                        <!-- PROVINO 5 -->
+                        <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon6">
+                            <div class="card-body">
+                                <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N PROVINO 5</b>
+                                    <div class="subrayadoDoradoTapon"></div>
+                                </p>
+                                <BR>
+                                <p>Tapones t&eacute;cnicos de alta performance para conservaci&oacute;n de vinos de alta 
+                                    gama, asegurando excelentes niveles de permeabilidad.</p>
+                            </div>
+                            <div class="card-footer footer-tarjeta-blanca">
+                                <img src="images/taponProvino5.png" style="width: 35%;">                            
+                                <div style="margin-top: 100px;">
+                                    <button type="button" class="btn boton-corcho" id="abrirModal_6">
+                                        <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                    </button> 
+                                </div>
+                            </div>   
+                        </div> 
+
+                        <!-- Modal Standard Provino 5 -->
+                        <div id="ventanaModal_6" class="modalnew">
+                            <div class="contenido-modal">               
+                                
+                                <div class="container-fluid todo-cero"> 
+                                    <div class="row ficha"> 
+                                        <div class="col-md-8 col-sm-12 todo-cero">
+                                            <div class="barra-ficha todo-cero">
+                                                STANDARD <b>T&Eacute;CNICOS</b>
+                                            </div>                                
+                                            <div style="display:flex; justify-content: space-between;">
+                                                <div class="ficha-titulo">
+                                                    TAP&Oacute;N <b>PROVINO 5</b>
+                                                    <div class="subrayadoDoradoFicha"></div>  
+                                                </div>
+                                                <div style="margin-top: 4%; text-align: end; margin-right: 4%;">
+                                                    <img src="images/taponProvino5_dos.png" style="width: 30%;">
+                                                </div>                                       
+                                            </div>                                                           
+                                            
+                                            <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
+                                                Tapones microgranulados de primera calidad, para la conservaci&oacute;n 
+                                                de vinos de alta gama.<br>
+                                                Combina las mejores prestaciones t&eacute;cnicas con la neutralidad.                                                                                      
+                                            </p>
+                                            <p class="ficha-texto2" style="margin-top: 1%;">
+                                                Provino 5 es un tap&oacute;n producido a partir de corcho granulado fino, desinfectado 
+                                                por el sistema ULTRa - Ultimate Line for TCA Removal by Almeida y fabricado con 
+                                                la &uacute;ltima tecnolog&iacute;a de moldeo individual.                                              
+                                            </p>
+                                            
+                                            <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 4%;">
+                                                <div style="width:70%; margin-left: 2%;">                                            
+                                                    <p class="ficha-titulo-calidad" style="margin-top: 0%; ">
+                                                        MEDIDAS
+                                                    </p>    
+                                                    <p class="ficha-texto2" style="margin-top: 0%;">
+                                                        44 x 24 mm&nbsp;&nbsp;|&nbsp;&nbsp;47 x 24 mm
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                            <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 0%;">
+                                                <div style="width:70%; margin-left: 0%;">                                            
+                                                        
+                                                </div>
+                                                <div class="ficha-AA">
+                                                        <img src="images/AA.png" style="width: 15%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
+                                            <span class="close zoom">&times;</span>
+                                            <img src="images/artisticaProvino5.jpg" style="width: 100%;">
+                                        </div>
+                                    </div>    
+                                </div> <!-- fin container fluid -->    
+                            </div> <!-- fin contenido modal -->
+                        </div> <!-- fin modal 6 -->                      
+
+                    </div> <!-- fin card group -->
+                </div>
+            </div>
+            <!-- FIN STANDARD TECNICOS (4)--> 
+
+            <!-- GARANTIA INDIVIDUAL NATURAL (1) -->
+            <div id="productos_garantia_1" class="contenedor-tarjeta-corcho" >
+                <a href="#cuadrados" onclick="inicioProductos();">
+                    <i class="bi bi-chevron-double-left flecha-atras"></i></a>
+                    &nbsp;&nbsp;GARANT&Iacute;A INDIVIDUAL <b>NATURALES (ISA)</b>&nbsp;&nbsp;
+                <i class="bi bi-chevron-double-left" style="color:transparent;"></i>
+                
+                <div class="espacio-bajo-titulo">
+
+                    <!-- TAPON GARANTIA INDIVIDUAL NATURAL -->
+                    <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon5">
+                        <div class="card-body">
+                            <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N NATURAL (ISA)</b>
+                                <div class="subrayadoDoradoTapon"></div>
+                            </p>
+                            <BR>
+                            <p>Producto por excelencia para sellar vinos de alta calidad.</p>
+                        </div>
+                        <div class="card-footer footer-tarjeta-blanca">
+                            <img src="images/taponGarantiaNatural.png" style="width: 35%;">                            
+                            <div style="margin-top: 100px;">
+                                <button type="button" class="btn boton-corcho" id="abrirModal_5">
+                                    <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
+                                </button> 
+                            </div>
+                        </div>   
+                    </div>             
                 </div>
             </div>
 
-            <!-- Modal Standard Natural -->
-            <div id="ventanaModal_1" class="modalnew">
+            <!-- Modal Garantia Individual Natural -->
+            <div id="ventanaModal_5" class="modalnew">
                 <div class="contenido-modal">               
                     
                     <div class="container-fluid todo-cero"> 
                         <div class="row ficha"> 
                             <div class="col-md-8 col-sm-12 todo-cero">
                                 <div class="barra-ficha todo-cero">
-                                    STANDARD <b>NATURAL</b>
+                                    GARANT&Iacute;A INDIVIDUAL <b>NATURALES (ISA)</b>
                                 </div>                                
                                 <div style="display:flex; justify-content: space-between;">
                                     <div class="ficha-titulo">
-                                        TAP&Oacute;N <b>NATURAL</b>
+                                        TAP&Oacute;N <b>NATURAL</b> (ISA)
                                         <div class="subrayadoDoradoFicha"></div>  
                                     </div>
                                     <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
-                                        <img src="images/taponStandardNatural.png" style="width: 30%;">
+                                        <img src="images/taponGarantiaNatural.png" style="width: 30%;">
                                     </div>                                       
                                 </div>                                                           
                                 
                                 <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
-                                    El tap&oacute;n de corcho natural es el producto por excelencia para sellar<br>
-                                    vinos de alta calidad.                                        
+                                    El tap&oacute;n de corcho natural es el producto por excelencia para sellar vinos de alta calidad. 
+                                    Evidencia de caracter&iacute;sticas inigualables con alto rendimiento, mec&aacute;nico y organol&eacute;ptico.                                     
                                 </p>
-                                <p class="ficha-texto2" style="margin-top: 0%;">
-                                    Evidencia de caracter&iacute;sticas inigualables con alto rendimiento,<br>
-                                    mec&aacute;nico y organol&eacute;ptico.<br>
-                                    Los tapones naturales se someten al proceso de desinfecci&oacute;n CASA - CleanAdvancedSystem by Almeida, 
-                                    caracterizado por largos ciclos, alternos, de ventilaci&oacute;n forzada, temperatura y ozono, 
-                                    reduciendo significativamente el nivel de TCA y olores no deseados.
-                                </p>
+                                <p class="ficha-texto2" style="margin-top: 1%;">
+                                    Los tapones Naturales ISA, se somenten a ciclos complementarios del proceso 
+                                    CASA y control individual de TCA, a trav&eacute;s del proceso ISA (An&aacute;lisis 
+                                    Sensorial Individual) permitiendo una seguridad adicional, eficaz en t&eacute;rminos 
+                                    organol&eacute;pticos, desviaciones sensoriales y TCA.                                    
+                                </p>                                
                                 <p class="ficha-titulo-calidad" style="margin-top: 3%; ">
                                     CALIDAD
                                 </p>    
@@ -302,302 +716,70 @@
                             </div>
                             <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
                                 <span class="close zoom">&times;</span>
-                                <img src="images/artisticaStandardNatural.JPG" style="width: 100%;">
+                                <img src="images/artisticaGarantiaNatural.jpg" style="width: 100%;">
                             </div>
                         </div>    
-                    </div> <!-- fin container fluid -->
+                    </div> <!-- fin container fluid --> 
+
                 </div> <!-- fin contenido modal -->
-            </div> <!-- fin modal 1 -->
-
-        </div> <!-- FIN STANDARD NATURALES (1)--> 
-
-        <!-- STANDARD TECNICOS (4)--> 
-        <div id="productos_standard_2" class="contenedor-tarjeta-corcho" >
-            <a href="#cuadrados" onclick="inicioProductos();">
-                <i class="bi bi-chevron-double-left flecha-atras"></i></a>
-                &nbsp;&nbsp;STANDARD <b>T&Eacute;CNICOS</b>&nbsp;&nbsp;
-            <i class="bi bi-chevron-double-left" style="color:transparent;"></i>
+            </div> <!-- fin modal 5 -->
             
-            <div class="espacio-bajo-titulo">
+            <!-- GARANTIA INDIVIDUAL TECNICOS (1) -->
+            <div id="productos_garantia_2" class="contenedor-tarjeta-corcho">
+                <a href="#cuadrados" onclick="inicioProductos();">
+                    <i class="bi bi-chevron-double-left flecha-atras"></i></a>
+                    &nbsp;&nbsp;GARANT&Iacute;A INDIVIDUAL <b>T&Eacute;CNICOS (ULTRA)</b>&nbsp;&nbsp;
+                <i class="bi bi-chevron-double-left" style="color:transparent;"></i>
+                
+                <div class="espacio-bajo-titulo">
 
-                <div class="card-group" style="margin-top: 10px;">
-
-                    <!-- MICROVINO --> 
-                    <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon2">
+                    <!-- PROVINO ON -->
+                    <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon7">
                         <div class="card-body">
-                            <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N MICROVINO</b>
+                            <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N PROVINO ON</b>
                                 <div class="subrayadoDoradoTapon"></div>
                             </p>
                             <BR>
-                            <p>
-                                Tapones producidos a partir de materias primas de alta calidad, 100% controlada, 
-                                con altos rendimientos en el embotellado, recomendados para vinos entry level.
-                            </p>
+                            <p>Tapones t&eacute;cnicos con niveles de TCA indetectables, destinados a vinos de guarda.</p>
                         </div>
                         <div class="card-footer footer-tarjeta-blanca">
-                            <img src="images/taponMicrovino.png" style="width: 35%;">                            
+                            <img src="images/taponProvinoOn.jpg" style="width: 35%;">                            
                             <div style="margin-top: 100px;">
-                                <button type="button" class="btn boton-corcho" id="abrirModal_2">
-                                    <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
-                                </button> 
-                            </div>
-                        </div>   
-                    </div>
-
-                    <!-- Modal Standard Microvino -->
-                    <div id="ventanaModal_2" class="modalnew">
-                        <div class="contenido-modal"> 
-                            
-                            <div class="container-fluid todo-cero"> 
-                                <div class="row ficha"> 
-                                    <div class="col-md-8 col-sm-12 todo-cero">
-                                        <div class="barra-ficha todo-cero">
-                                            STANDARD <b>T&Eacute;CNICOS</b>
-                                        </div>                                
-                                        <div style="display:flex; justify-content: space-between;">
-                                            <div class="ficha-titulo">
-                                                TAP&Oacute;N <b>MICROVINO</b>
-                                                <div class="subrayadoDoradoFicha"></div>  
-                                            </div>
-                                            <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
-                                                <img src="images/taponMicrovino.png" style="width: 30%;">
-                                            </div>                                       
-                                        </div>                                                           
-                                        
-                                        <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
-                                            Los tapones Microvino ofrecen una capacidad de sellado ejemplar, con propriedades 
-                                            mec&aacute;nicas y sensoriales, a precios econ&oacute;micos.                                         
-                                        </p>
-                                        <p class="ficha-texto2" style="margin-top: 2%;">
-                                            Este tap&oacute;n tiene una excelente capacidad mec&aacute;nica y 
-                                            una elevada neutralidad organol&eacute;ptica, ofreciendo un 
-                                            desempeño homog&eacute;neo en el embotellado.
-                                        </p>
-                                        <p class="ficha-titulo-calidad" style="margin-top: 3%; ">
-                                            MEDIDAS
-                                        </p>    
-                                        <p class="ficha-texto2" style="margin-top: 0%;">
-                                            44 x 24 mm
-                                        </p>
-                                        <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 5%;">
-                                            <div style="width:70%; margin-left: 0%;">                                            
-                                                
-                                            </div>
-                                            <div class="ficha-AA">
-                                                <img src="images/AA.png" style="width: 15%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
-                                        <span class="close zoom">&times;</span>
-                                        <img src="images/artisticaMicrovino.jpg" style="width: 100%;">
-                                    </div>
-                                </div>    
-                            </div> <!-- fin container fluid -->
-                        </div> <!-- fin contenido modal -->
-                    </div> <!-- fin modal 3 -->                    
-
-                    <!-- PROVINO 2 --> 
-                    <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon3">
-                        <div class="card-body">
-                            <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N PROVINO 2</b>
-                                <div class="subrayadoDoradoTapon"></div>
-                            </p>
-                            <BR>
-                            <p>Tapones producidos a partir de corcho granulado con elevada neutralidad organol&eacute;ptica.</p>                        
-                        </div>
-                        <div class="card-footer footer-tarjeta-blanca">
-                            <img src="images/taponProvino2.png" style="width: 35%;">                            
-                            <div style="margin-top: 100px;">
-                                <button type="button" class="btn boton-corcho" id="abrirModal_3">
-                                    <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
-                                </button> 
-                            </div>
-                        </div>   
-                    </div>
-
-                    <!-- Modal Standard Provino 2 -->
-                    <div id="ventanaModal_3" class="modalnew">
-                        <div class="contenido-modal">  
-                            
-                            <div class="container-fluid todo-cero"> 
-                                <div class="row ficha"> 
-                                    <div class="col-md-8 col-sm-12 todo-cero">
-                                        <div class="barra-ficha todo-cero">
-                                            STANDARD <b>T&Eacute;CNICOS</b>
-                                        </div>                                
-                                        <div style="display:flex; justify-content: space-between;">
-                                            <div class="ficha-titulo">
-                                                TAP&Oacute;N <b>PROVINO 2</b>
-                                                <div class="subrayadoDoradoFicha"></div>  
-                                            </div>
-                                            <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
-                                                <img src="images/taponProvino2.png" style="width: 30%;">
-                                            </div>                                       
-                                        </div>                                                           
-                                        
-                                        <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
-                                            Los tapones Provino 2 son tapones producidos a partir de corcho 
-                                            granulado (0,5 - 2 mm), desinfectados por el sistema ULTRa - Ultimate Line for TCA Removal by Almeida 
-                                            y fabricados con la &uacute;ltima tecnolog&iacute;a de moldeo individual.                                                                                      
-                                        </p>
-                                        <p class="ficha-texto2" style="margin-top: 1%;">
-                                            Los tapones  Provino 2 ofrecen una capacidad de sellado ejemplar y un 
-                                            rendimiento mec&aacute;nico y sensorial que lo convierte en una referencia 
-                                            en el mercado de tapones t&eacute;cnicos. Una soluci&oacute;n inteligente 
-                                            y econ&oacute;mica para quienes apuestan por el rendimiento, la tradici&oacute;n 
-                                            y la sostenibilidad.                                                
-                                        </p>
-                                        
-                                        <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 4%;">
-                                            <div style="width:70%; margin-left: 2%;">                                            
-                                                <p class="ficha-titulo-calidad" style="margin-top: 0%; ">
-                                                    MEDIDAS
-                                                </p>    
-                                                <p class="ficha-texto2" style="margin-top: 0%;">
-                                                    44 x 24 mm
-                                                </p>                                                    
-                                            </div>
-                                            <div class="ficha-AA">
-                                                <img src="images/AA.png" style="width: 15%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
-                                        <span class="close zoom">&times;</span>
-                                        <img src="images/artisticaProvino2.jpg" style="width: 100%;">
-                                    </div>
-                                </div>    
-                            </div> <!-- fin container fluid -->                               
-                            
-                        </div> <!-- fin contenido modal -->
-                    </div> <!-- fin modal 3 -->
-
-                    <!-- PROVINO 3 -->
-                    <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon4">
-                        <div class="card-body">
-                            <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N PROVINO 3</b>
-                                <div class="subrayadoDoradoTapon"></div>
-                            </p>
-                            <BR>
-                            <p>Tapones producidos a partir de corcho granulado con elevada neutralidad organol&eacute;ptica.</p>                        
-                        </div>
-                        <div class="card-footer footer-tarjeta-blanca">
-                            <img src="images/taponProvino3.png" style="width: 35%;">                            
-                            <div style="margin-top: 100px;">
-                                <button type="button" class="btn boton-corcho" id="abrirModal_4">
-                                    <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
-                                </button> 
-                            </div>
-                        </div>   
-                    </div>
-
-                    <!-- Modal Standard Provino 3 -->
-                    <div id="ventanaModal_4" class="modalnew">
-                        <div class="contenido-modal">      
-                            
-                            <div class="container-fluid todo-cero"> 
-                                <div class="row ficha"> 
-                                    <div class="col-md-8 col-sm-12 todo-cero">
-                                        <div class="barra-ficha todo-cero">
-                                            STANDARD <b>T&Eacute;CNICOS</b>
-                                        </div>                                
-                                        <div style="display:flex; justify-content: space-between;">
-                                            <div class="ficha-titulo">
-                                                TAP&Oacute;N <b>PROVINO 3</b>
-                                                <div class="subrayadoDoradoFicha"></div>  
-                                            </div>
-                                            <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
-                                                <img src="images/taponProvino3.png" style="width: 30%;">
-                                            </div>                                       
-                                        </div>                                                           
-                                        
-                                        <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
-                                            Los tapones Provino 3 son tapones producidos a partir de corcho 
-                                            granulado (0,5 - 2 mm), desinfectados por el sistema ULTRa - Ultimate Line for TCA Removal by Almeida 
-                                            y fabricados con la &uacute;ltima tecnolog&iacute;a de moldeo individual.                                                                                      
-                                        </p>
-                                        <p class="ficha-texto2" style="margin-top: 1%;">
-                                            Los tapones  Provino 3 ofrecen una capacidad de sellado ejemplar y un 
-                                            rendimiento mec&aacute;nico y sensorial que lo convierte en una referencia 
-                                            en el mercado de tapones t&eacute;cnicos. Una soluci&oacute;n inteligente 
-                                            y econ&oacute;mica para quienes apuestan por el rendimiento, la tradici&oacute;n 
-                                            y la sostenibilidad.                                                
-                                        </p>
-                                        
-                                        <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 4%;">
-                                            <div style="width:70%; margin-left: 2%;">                                            
-                                                <p class="ficha-titulo-calidad" style="margin-top: 0%; ">
-                                                    MEDIDAS
-                                                </p>    
-                                                <p class="ficha-texto2" style="margin-top: 0%;">
-                                                    44 x 24 mm
-                                                </p>                                                    
-                                            </div>
-                                            <div class="ficha-AA">
-                                                <img src="images/AA.png" style="width: 15%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
-                                        <span class="close zoom">&times;</span>
-                                        <img src="images/artisticaProvino3.jpg" style="width: 100%;">
-                                    </div>
-                                </div>    
-                            </div> <!-- fin container fluid -->                                     
-                            
-                        </div> <!-- fin contenido modal -->
-                    </div> <!-- fin modal 4 -->
-                    
-                    <!-- PROVINO 5 -->
-                    <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon6">
-                        <div class="card-body">
-                            <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N PROVINO 5</b>
-                                <div class="subrayadoDoradoTapon"></div>
-                            </p>
-                            <BR>
-                            <p>Tapones t&eacute;cnicos de alta performance para conservaci&oacute;n de vinos de alta 
-                                gama, asegurando excelentes niveles de permeabilidad.</p>
-                        </div>
-                        <div class="card-footer footer-tarjeta-blanca">
-                            <img src="images/taponProvino5.png" style="width: 35%;">                            
-                            <div style="margin-top: 100px;">
-                                <button type="button" class="btn boton-corcho" id="abrirModal_6">
+                                <button type="button" class="btn boton-corcho" id="abrirModal_7">
                                     <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
                                 </button> 
                             </div>
                         </div>   
                     </div> 
 
-                    <!-- Modal Standard Provino 5 -->
-                    <div id="ventanaModal_6" class="modalnew">
+                    <!-- Modal Standard Provino ON -->
+                    <div id="ventanaModal_7" class="modalnew">
                         <div class="contenido-modal">               
                             
                             <div class="container-fluid todo-cero"> 
                                 <div class="row ficha"> 
                                     <div class="col-md-8 col-sm-12 todo-cero">
                                         <div class="barra-ficha todo-cero">
-                                            STANDARD <b>T&Eacute;CNICOS</b>
+                                            GARANT&Iacute;A INDIVIDUAL <b>T&Eacute;CNICOS (ULTRA)</b></b>
                                         </div>                                
                                         <div style="display:flex; justify-content: space-between;">
                                             <div class="ficha-titulo">
-                                                TAP&Oacute;N <b>PROVINO 5</b>
+                                                TAP&Oacute;N <b>PROVINO ON</b>
                                                 <div class="subrayadoDoradoFicha"></div>  
                                             </div>
-                                            <div style="margin-top: 4%; text-align: end; margin-right: 4%;">
-                                                <img src="images/taponProvino5_dos.png" style="width: 30%;">
+                                            <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
+                                                <img src="images/taponProvinoOn.jpg" style="width: 30%;">
                                             </div>                                       
                                         </div>                                                           
                                         
                                         <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
-                                            Tapones microgranulados de primera calidad, para la conservaci&oacute;n 
-                                            de vinos de alta gama.<br>
-                                            Combina las mejores prestaciones t&eacute;cnicas con la neutralidad.                                                                                      
+                                            Los tapones PROVINO ON est&aacute;n elaborados con corcho de lotes de materias 
+                                            primas seleccionadas.                                                                                     
                                         </p>
                                         <p class="ficha-texto2" style="margin-top: 1%;">
-                                            Provino 5 es un tap&oacute;n producido a partir de corcho granulado fino, desinfectado 
-                                            por el sistema ULTRa - Ultimate Line for TCA Removal by Almeida y fabricado con 
-                                            la &uacute;ltima tecnolog&iacute;a de moldeo individual.                                              
+                                            Los gr&aacute;nulos de los tapones PROVINO ON se someten a un proceso de desinfecci&oacute;n 
+                                            mejorado ULTRa - L&iacute;nea definitiva para la eliminaci&oacute;n de TCA.<br>
+                                            Son tapones sujetos a rigurosos controles para garantizar su neutralidad sensorial.
                                         </p>
                                         
                                         <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 4%;">
@@ -621,226 +803,46 @@
                                     </div>
                                     <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
                                         <span class="close zoom">&times;</span>
-                                        <img src="images/artisticaProvino5.jpg" style="width: 100%;">
-                                    </div>
+                                        <img src="images/artisticaProvinoOn.png" style="width: 100%;">
+                                    </div>                                
                                 </div>    
                             </div> <!-- fin container fluid -->    
                         </div> <!-- fin contenido modal -->
-                    </div> <!-- fin modal 6 -->                      
-
-                </div> <!-- fin card group -->
+                    </div> <!-- fin modal 7 -->   
+                </div>    
             </div>
         </div>
-        <!-- FIN STANDARD TECNICOS (4)--> 
-
-        <!-- GARANTIA INDIVIDUAL NATURAL (1) -->
-        <div id="productos_garantia_1" class="contenedor-tarjeta-corcho" >
-            <a href="#cuadrados" onclick="inicioProductos();">
-                <i class="bi bi-chevron-double-left flecha-atras"></i></a>
-                &nbsp;&nbsp;GARANT&Iacute;A INDIVIDUAL <b>NATURALES (ISA)</b>&nbsp;&nbsp;
-            <i class="bi bi-chevron-double-left" style="color:transparent;"></i>
-            
-            <div class="espacio-bajo-titulo">
-
-                <!-- TAPON GARANTIA INDIVIDUAL NATURAL -->
-                <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon5">
-                    <div class="card-body">
-                        <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N NATURAL (ISA)</b>
-                            <div class="subrayadoDoradoTapon"></div>
-                        </p>
-                        <BR>
-                        <p>Producto por excelencia para sellar vinos de alta calidad.</p>
-                    </div>
-                    <div class="card-footer footer-tarjeta-blanca">
-                        <img src="images/taponGarantiaNatural.png" style="width: 35%;">                            
-                        <div style="margin-top: 100px;">
-                            <button type="button" class="btn boton-corcho" id="abrirModal_5">
-                                <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
-                            </button> 
-                        </div>
-                    </div>   
-                </div>             
-            </div>
-        </div>
-
-        <!-- Modal Garantia Individual Natural -->
-        <div id="ventanaModal_5" class="modalnew">
-            <div class="contenido-modal">               
-                
-                <div class="container-fluid todo-cero"> 
-                    <div class="row ficha"> 
-                        <div class="col-md-8 col-sm-12 todo-cero">
-                            <div class="barra-ficha todo-cero">
-                                GARANT&Iacute;A INDIVIDUAL <b>NATURALES (ISA)</b>
-                            </div>                                
-                            <div style="display:flex; justify-content: space-between;">
-                                <div class="ficha-titulo">
-                                    TAP&Oacute;N <b>NATURAL</b> (ISA)
-                                    <div class="subrayadoDoradoFicha"></div>  
-                                </div>
-                                <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
-                                    <img src="images/taponGarantiaNatural.png" style="width: 30%;">
-                                </div>                                       
-                            </div>                                                           
-                            
-                            <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
-                                El tap&oacute;n de corcho natural es el producto por excelencia para sellar vinos de alta calidad. 
-                                Evidencia de caracter&iacute;sticas inigualables con alto rendimiento, mec&aacute;nico y organol&eacute;ptico.                                     
-                            </p>
-                            <p class="ficha-texto2" style="margin-top: 1%;">
-                                Los tapones Naturales ISA, se somenten a ciclos complementarios del proceso 
-                                CASA y control individual de TCA, a trav&eacute;s del proceso ISA (An&aacute;lisis 
-                                Sensorial Individual) permitiendo una seguridad adicional, eficaz en t&eacute;rminos 
-                                organol&eacute;pticos, desviaciones sensoriales y TCA.                                    
-                            </p>                                
-                            <p class="ficha-titulo-calidad" style="margin-top: 3%; ">
-                                CALIDAD
-                            </p>    
-                            <p class="ficha-texto2" style="margin-top: 0%;">
-                                PRIMERA&nbsp;&nbsp;|&nbsp;&nbsp;EXTRA&nbsp;&nbsp;|&nbsp;&nbsp;FLOR
-                            </p>
-                            <div style="display:flex; justify-content: space-between; padding-left: 0%;">
-                                <div style="width:70%; margin-left: 0%;">                                            
-                                    <p class="ficha-titulo-medidas" style="margin-top: 2%;">
-                                        MEDIDAS                                    
-                                    </p>    
-                                    <p class="ficha-texto2" style="margin-top: 0%; padding-left:12%;">
-                                        45 x 24 mm&nbsp;&nbsp;|&nbsp;&nbsp;49 x 24 mm
-                                    </p>
-                                </div>
-                                <div class="ficha-AA">
-                                    <img src="images/AA.png" style="width: 15%;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
-                            <span class="close zoom">&times;</span>
-                            <img src="images/artisticaGarantiaNatural.jpg" style="width: 100%;">
-                        </div>
-                    </div>    
-                </div> <!-- fin container fluid --> 
-
-            </div> <!-- fin contenido modal -->
-        </div> <!-- fin modal 5 -->
-        
-        <!-- GARANTIA INDIVIDUAL TECNICOS (1) -->
-        <div id="productos_garantia_2" class="contenedor-tarjeta-corcho">
-            <a href="#cuadrados" onclick="inicioProductos();">
-                <i class="bi bi-chevron-double-left flecha-atras"></i></a>
-                &nbsp;&nbsp;GARANT&Iacute;A INDIVIDUAL <b>T&Eacute;CNICOS (ULTRA)</b>&nbsp;&nbsp;
-            <i class="bi bi-chevron-double-left" style="color:transparent;"></i>
-            
-            <div class="espacio-bajo-titulo">
-
-                <!-- PROVINO ON -->
-                <div class="card tarjeta-blanca texto-tarjeta-blanca" id="card-tapon7">
-                    <div class="card-body">
-                        <p class="card-title titulo-tarjeta-blanca"><b>TAP&Oacute;N PROVINO ON</b>
-                            <div class="subrayadoDoradoTapon"></div>
-                        </p>
-                        <BR>
-                        <p>Tapones t&eacute;cnicos con niveles de TCA indetectables, destinados a vinos de guarda.</p>
-                    </div>
-                    <div class="card-footer footer-tarjeta-blanca">
-                        <img src="images/taponProvinoOn.jpg" style="width: 35%;">                            
-                        <div style="margin-top: 100px;">
-                            <button type="button" class="btn boton-corcho" id="abrirModal_7">
-                                <i class="bi bi-zoom-in" style="color: white; font-size: 1.6rem;"></i>
-                            </button> 
-                        </div>
-                    </div>   
-                </div> 
-
-                <!-- Modal Standard Provino ON -->
-                <div id="ventanaModal_7" class="modalnew">
-                    <div class="contenido-modal">               
-                        
-                        <div class="container-fluid todo-cero"> 
-                            <div class="row ficha"> 
-                                <div class="col-md-8 col-sm-12 todo-cero">
-                                    <div class="barra-ficha todo-cero">
-                                        GARANT&Iacute;A INDIVIDUAL <b>T&Eacute;CNICOS (ULTRA)</b></b>
-                                    </div>                                
-                                    <div style="display:flex; justify-content: space-between;">
-                                        <div class="ficha-titulo">
-                                            TAP&Oacute;N <b>PROVINO ON</b>
-                                            <div class="subrayadoDoradoFicha"></div>  
-                                        </div>
-                                        <div style="margin-top: 4%; text-align: end; margin-right: 8%;">
-                                            <img src="images/taponProvinoOn.jpg" style="width: 30%;">
-                                        </div>                                       
-                                    </div>                                                           
-                                    
-                                    <p class="ficha-texto1" style="margin-top: 2%; margin-bottom: 0%;">
-                                        Los tapones PROVINO ON est&aacute;n elaborados con corcho de lotes de materias 
-                                        primas seleccionadas.                                                                                     
-                                    </p>
-                                    <p class="ficha-texto2" style="margin-top: 1%;">
-                                        Los gr&aacute;nulos de los tapones PROVINO ON se someten a un proceso de desinfecci&oacute;n 
-                                        mejorado ULTRa - L&iacute;nea definitiva para la eliminaci&oacute;n de TCA.<br>
-                                        Son tapones sujetos a rigurosos controles para garantizar su neutralidad sensorial.
-                                    </p>
-                                    
-                                    <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 4%;">
-                                        <div style="width:70%; margin-left: 2%;">                                            
-                                            <p class="ficha-titulo-calidad" style="margin-top: 0%; ">
-                                                MEDIDAS
-                                            </p>    
-                                            <p class="ficha-texto2" style="margin-top: 0%;">
-                                                44 x 24 mm&nbsp;&nbsp;|&nbsp;&nbsp;47 x 24 mm
-                                            </p>                                                    
-                                        </div>
-                                    </div>
-                                    <div style="display:flex; justify-content: space-between; padding-left: 0%; margin-top: 0%;">
-                                        <div style="width:70%; margin-left: 0%;">                                            
-                                                
-                                        </div>
-                                        <div class="ficha-AA">
-                                                <img src="images/AA.png" style="width: 15%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 todo-cero" style="align-items: end;">
-                                    <span class="close zoom">&times;</span>
-                                    <img src="images/artisticaProvinoOn.png" style="width: 100%;">
-                                </div>                                
-                            </div>    
-                        </div> <!-- fin container fluid -->    
-                    </div> <!-- fin contenido modal -->
-                </div> <!-- fin modal 7 -->   
-            </div>    
-        </div>
-        
         <!--------- FIN PRODUCTOS -->
 
         <!-- CONTACTO -->
         <a name="contacto"></a>
-        <!--<div class="linea-iconos-contacto">
-            <a href="mailto:calidad@pibsa.com.ar" target="_blank" class="link-icono-contacto">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope zoom icono-contacto" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                </svg>
-            </a>  
-            <a href="https://wa.me/5492615545479" target="_blank" class="link-icono-contacto">  
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp zoom icono-contacto" viewBox="0 0 16 16">
-                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                </svg>
-            </a>          
-            <a href="https://wa.me/5492612067425" target="_blank" class="link-icono-contacto">  
-                <svg  xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-phone zoom icono-contacto" viewBox="0 0 16 16">
-                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                </svg>  
-            </a>
-            <a href="https://www.google.com/maps/place/Lateral+Norte+Acceso+Este+10020,+M5527+Mendoza/@-32.9379199,-68.743245,17z/data=!4m16!1m9!3m8!1s0x967e0dbd3ef2d9cf:0x4c167b984b0b8a5f!2sLateral+Norte+Acceso+Este+10020,+M5527+Mendoza!3b1!8m2!3d-32.9379199!4d-68.7410563!10e5!16s%2Fg%2F11fvk8pzdy!3m5!1s0x967e0dbd3ef2d9cf:0x4c167b984b0b8a5f!8m2!3d-32.9379199!4d-68.7410563!16s%2Fg%2F11fvk8pzdy" 
-            target="_blank" class="link-icono-contacto">  
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt zoom icono-contacto" viewBox="0 0 16 16">                
-                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                </svg> 
-            </a>  
-        </div>-->
-        
+        <div style="height: 35%;">
+            <div class="linea-iconos-contacto">
+                <a href="mailto:calidad@pibsa.com.ar" target="_blank" class="link-icono-contacto">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope zoom icono-contacto" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                </a>  
+                <a href="https://wa.me/5492615545479" target="_blank" class="link-icono-contacto">  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp zoom icono-contacto" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                </a>          
+                <a href="https://wa.me/5492612067425" target="_blank" class="link-icono-contacto">  
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-phone zoom icono-contacto" viewBox="0 0 16 16">
+                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>  
+                </a>
+                <a href="https://www.google.com/maps/place/Lateral+Norte+Acceso+Este+10020,+M5527+Mendoza/@-32.9379199,-68.743245,17z/data=!4m16!1m9!3m8!1s0x967e0dbd3ef2d9cf:0x4c167b984b0b8a5f!2sLateral+Norte+Acceso+Este+10020,+M5527+Mendoza!3b1!8m2!3d-32.9379199!4d-68.7410563!10e5!16s%2Fg%2F11fvk8pzdy!3m5!1s0x967e0dbd3ef2d9cf:0x4c167b984b0b8a5f!8m2!3d-32.9379199!4d-68.7410563!16s%2Fg%2F11fvk8pzdy" 
+                target="_blank" class="link-icono-contacto">  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt zoom icono-contacto" viewBox="0 0 16 16">                
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg> 
+                </a>  
+            </div>
+        </div>
     </div>
     
 

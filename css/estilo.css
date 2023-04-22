@@ -609,28 +609,16 @@ body {
   
   /*--- CONTACTO --- */
 
-  .linea-iconos-contacto {
-    position: relative;
-    top: 28vmax;    
+  .linea-iconos-contacto {      
     text-align: center;
     color: #f2f2f2; 
     font-size: 3rem; 
     letter-spacing: 30px;
-    width:100%;
-    
+    width:100%;    
+    margin-top: 2%;
   }
 
-  .linea-iconos-contacto2 {
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    text-align: center;
-    color: #f2f2f2; 
-    font-size: 3rem; 
-    width: 100%;
-    letter-spacing: 30px;
-  }
-  
+ 
   .link-icono-contacto {
     text-decoration: none;
   }
@@ -663,6 +651,34 @@ body {
 /*************** CELULAR *******************/
 
 @media screen and (max-width: 768px) {
+
+  /* ------- SIDEBAR ------ */
+  .sidebar {
+    width: 250px;
+    font-family: 'Montserrat-Regular', sans-serif ;
+    opacity: 0.9;
+  }
+
+  .sidebar-icono-close {
+    font-size: 1.2rem;
+    padding-top:10px;
+    padding-right: 20px; 
+  }
+  
+  .sidebar-item {
+      font-size: 0.7rem;
+    }
+
+  .sidebar-subitem {
+      font-size: 0.6rem;
+      margin-left: 15%;
+  }
+
+  .sidebar-burger {
+      font-size: 1.2rem;
+      padding-top:10px;
+      padding-right: 10px;
+    }
 
   /* --- HOME --- */ 
   .barra-home {
@@ -818,7 +834,7 @@ body {
   .productosYcontacto {
     background-image: url('../images/fondo4_ProductosContacto.png') !important;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 100%;  
     height:67vmax;
   }
@@ -901,48 +917,18 @@ body {
   }
 
    /* --- CONTACTO ---- */
-   .linea-iconos-contacto {
-    font-size: 0.1rem; 
-    letter-spacing: 15px;
-    position: relative;
-    top: 12vmax;  
-  }
-
 
   .icono-contacto {
     width:25px;
     height: 25px;
   }
 
-
-
-  .sidebar {
-    width: 250px;
-    font-family: 'Montserrat-Regular', sans-serif ;
-    opacity: 0.9;
-  }
-
-  .sidebar-icono-close {
-    font-size: 1.2rem;
-    padding-top:10px;
-    padding-right: 20px; 
-  }
-  
-  .sidebar-item {
-      font-size: 0.7rem;
-    }
-
-  .sidebar-subitem {
-      font-size: 0.6rem;
-      margin-left: 15%;
-  }
-
-  .sidebar-burger {
-      font-size: 1.2rem;
-      padding-top:10px;
-      padding-right: 10px;
-    }  
-
+  .linea-iconos-contacto {      
+    font-size: 2rem; 
+    letter-spacing: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }  
 
 }
 /*
@@ -1147,13 +1133,6 @@ body {
     }
 
   /* --- CONTACTO --- */
-  
- .linea-iconos-contacto {
-    font-size: 35px; 
-    letter-spacing: 35px;
-    position: relative;
-    top: 29vmax;      
-  }
 
 
   /* --- SIDEBAR --- */
