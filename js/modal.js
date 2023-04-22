@@ -16,8 +16,6 @@ var boton5 = document.getElementById('abrirModal_5');
 var boton6 = document.getElementById('abrirModal_6');
 var boton7 = document.getElementById('abrirModal_7');
 
-// Hace referencia al elemento <span> que tiene la X que cierra la ventana
-//var span = document.getElementsByClassName("cerrarModal_1")[0];
 
 // Cuando el usuario hace click en el botón, se abre la ventana
 boton1.addEventListener("click",function() {
@@ -42,10 +40,43 @@ boton7.addEventListener("click",function() {
     modal7.style.display = "block";
 });
 
-// Si el usuario hace click en la x, la ventana se cierra
-/*span.addEventListener("click",function() {
-    modal.style.display = "none";
-});*/
+// Hace referencia al elemento <span> que tiene la X que cierra la ventana
+var span1 = document.getElementsByClassName("close")[0];
+span1.addEventListener("click",function() {
+    modal1.style.display = "none";
+});
+
+var span2 = document.getElementsByClassName("close")[1];
+span2.addEventListener("click",function() {
+    modal2.style.display = "none";
+});
+
+var span3 = document.getElementsByClassName("close")[2];
+span3.addEventListener("click",function() {
+    modal3.style.display = "none";
+});
+
+var span4 = document.getElementsByClassName("close")[3];
+span4.addEventListener("click",function() {
+    modal4.style.display = "none";
+});
+
+var span6 = document.getElementsByClassName("close")[4];
+span6.addEventListener("click",function() {
+    modal6.style.display = "none";
+});
+
+var span5 = document.getElementsByClassName("close")[5];
+span5.addEventListener("click",function() {
+    modal5.style.display = "none";
+});
+
+var span7 = document.getElementsByClassName("close")[6];
+span7.addEventListener("click",function() {
+    modal7.style.display = "none";
+});
+
+
 
 // Si el usuario hace click fuera de la ventana, se cierra.
 window.addEventListener("click",function(event) {

@@ -58,6 +58,66 @@ body {
   margin-right: 0px;
 }
 
+/* --- SIDEBAR --- */
+.sidebar {
+  width: 350px;
+  font-family: 'Montserrat-Regular', sans-serif ;
+  opacity: 0.9;
+  display:none; 
+  padding-top:80px; 
+  right:0; 
+  z-index:2; 
+}
+
+.sidebar-burger {
+  font-size: 2.2rem;
+  padding: 8px 20px;
+  color:#c4b3a4;
+}
+
+.sidebar-burger:hover {
+  color:#f5c9ae !important;
+  background-color:#000!important;
+}
+
+.sidebar-icono-close {
+  font-size: 2.2rem;
+  color:#c4b3a4;
+  padding:20 12px;   
+}
+
+.sidebar-icono-close:hover {
+  color:#f5c9ae !important;
+  background-color:#000!important;
+  font-weight: bold; 
+}
+    
+.sidebar-item {
+  font-family: 'Montserrat-Regular', sans-serif ;
+  font-size: 1rem;  
+}
+
+.sidebar-item::after{
+  font-family: 'Montserrat-Regular', sans-serif ;
+  font-size: 1rem;  
+  display:block;
+  content: '';
+  border-bottom: solid 2px #c4b3a4;  
+  transform: scaleX(0);  
+  transition: transform 800ms ease-in-out;
+}
+
+.sidebar-item:hover:after {
+  transform: scaleX(1);
+}
+
+.sidebar-item:hover {
+  font-family: 'Montserrat-Regular', sans-serif ;  
+  font-weight: bold;
+  color:#eeb490 !important;
+  background-color:#000!important;
+}
+
 /* --- HOME --- */
 .barra-home {
   background-color: #cabcae; 
@@ -144,13 +204,21 @@ body {
   box-shadow: none !important;
 }
 
+.linea-hr-home {
+  position: absolute;
+  top: 650px;
+  left: 120px;   
+  width: 33%;
+}
+
 .linea-redes-home {
   position: absolute;
-  top: 670px;
+  top: 690px;
   left: 120px;    
   font-family: Montserrat-Regular; 
-  font-size: 1.1rem; 
+  font-size: 1.2rem; 
   color: gray;
+  width: 33%;
 }
 
 /*---- SOMOS -----*/
@@ -193,7 +261,11 @@ body {
 
 .video {
   padding-top:0px; 
-  padding-bottom: 150px !important;
+  padding-bottom: 40px !important;
+}
+
+.separador-video {
+  height: 90px;
 }
 
 .logo-somos {
@@ -356,7 +428,7 @@ body {
 }
 
 .link-cuadrado-producto:hover {
-  font-size: 1.2rem !important; 
+  font-size: 0.9rem !important; 
   text-decoration: none;
   color:rgb(54, 52, 52) !important;    
 }
@@ -479,7 +551,9 @@ body {
     padding-left: 8%; 
     font-family: 'Playfair-Regular'; 
     font-size: 2rem; 
-    text-align: start;    
+    text-align: start;  
+    margin-top: 18%; 
+    width:70%;  
   }
 
   .subrayadoDoradoFicha {
@@ -525,18 +599,38 @@ body {
       text-align: start;
       line-height: 0.5px;
     }
+
+    .ficha-AA {
+      width: 30%; 
+      text-align: end; 
+      margin-right: 4%; 
+      margin-bottom: 0%;
+    }
   
   /*--- CONTACTO --- */
 
   .linea-iconos-contacto {
+    position: relative;
+    top: 28vmax;    
     text-align: center;
     color: #f2f2f2; 
     font-size: 3rem; 
     letter-spacing: 30px;
     width:100%;
-    padding-top: 28vmax;    
+    
   }
 
+  .linea-iconos-contacto2 {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+    color: #f2f2f2; 
+    font-size: 3rem; 
+    width: 100%;
+    letter-spacing: 30px;
+  }
+  
   .link-icono-contacto {
     text-decoration: none;
   }
@@ -555,10 +649,6 @@ body {
     color:#eeb490;
   }
 
-  .separador-contacto {
-    height: 950px;
-  }
-
   .zoom {
     transition: transform .8s; 
   }
@@ -567,65 +657,7 @@ body {
      transform: scale(1.5);      
   }
 
-  /* --- SIDEBAR --- */
-  .sidebar {
-    width: 350px;
-    font-family: 'Montserrat-Regular', sans-serif ;
-    opacity: 0.9;
-    display:none; 
-    padding-top:80px; 
-    right:0; 
-    z-index:2; 
-  }
-
-  .sidebar-burger {
-    font-size: 2.2rem;
-    padding: 8px 20px;
-    color:#c4b3a4;
-  }
-
-  .sidebar-burger:hover {
-    color:#f5c9ae !important;
-    background-color:#000!important;
-  }
-
-  .sidebar-icono-close {
-    font-size: 2.2rem;
-    color:#c4b3a4;
-    padding:20 12px;   
-  }
-
-  .sidebar-icono-close:hover {
-    color:#f5c9ae !important;
-    background-color:#000!important;
-    font-weight: bold; 
-  }
-      
-  .sidebar-item {
-    font-family: 'Montserrat-Regular', sans-serif ;
-    font-size: 1rem;  
-  }
-
-  .sidebar-item::after{
-    font-family: 'Montserrat-Regular', sans-serif ;
-    font-size: 1rem;  
-    display:block;
-    content: '';
-    border-bottom: solid 2px #c4b3a4;  
-    transform: scaleX(0);  
-    transition: transform 800ms ease-in-out;
-  }
-
-  .sidebar-item:hover:after {
-    transform: scaleX(1);
-  }
-
-  .sidebar-item:hover {
-    font-family: 'Montserrat-Regular', sans-serif ;  
-    font-weight: bold;
-    color:#eeb490 !important;
-    background-color:#000!important;
-  }
+  
 
 
 /*************** CELULAR *******************/
@@ -687,7 +719,19 @@ body {
     margin-top: 15px;
   }
   
+  .linea-hr-home {
+    display: none;
+  }
+
   .linea-redes-home {
+    display: none;
+  }
+
+  .redes1 {
+    display: none;
+  }
+
+  .redes2 {
     display: none;
   }
 
@@ -718,6 +762,10 @@ body {
   .video {
     padding-top:0px; 
     padding-bottom: 50px !important;
+  }
+
+  .separador-video {
+    height: 0px;
   }
 
   .logo-somos {
@@ -832,12 +880,32 @@ body {
     width: 70px;
   }
 
+  /* --- FICHA ---*/
+
+  .ficha-titulo {
+    padding-left: 8%;     
+    font-size: 1.5rem; 
+    text-align: start;    
+  }
+
+  .ficha-AA {
+    display: none;
+  }
+
+  .barra-ficha {
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 0.9rem;    
+    text-align: start;
+  }
 
    /* --- CONTACTO ---- */
    .linea-iconos-contacto {
-    font-size: 0.2rem; 
+    font-size: 0.1rem; 
     letter-spacing: 15px;
-    padding-top: 12vmax;     
+    position: relative;
+    top: 12vmax;  
   }
 
 
@@ -846,9 +914,7 @@ body {
     height: 25px;
   }
 
-  .separador-contacto {
-    height: 0px;
-  }
+
 
   .sidebar {
     width: 250px;
@@ -953,13 +1019,21 @@ body {
     font-size: 1.4rem;
   }
 
-  .linea-redes-home {
+  .linea-hr-home {
     position: absolute;
     top: 950px;
+    left: 170px;   
+    width: 30%;
+  }
+
+  .linea-redes-home {
+    position: absolute;
+    top: 1000px;
     left: 170px;    
     font-family: Montserrat-Regular; 
     font-size: 1.3rem; 
     color: gray;
+    width: 30%;
   }
 
   /*------ SOMOS ------*/
@@ -992,6 +1066,10 @@ body {
 
   .logo-AA {
     margin-top:50px;     
+  }
+
+  .separador-video {
+    height: 150px;
   }
   
   /* --- PRODUCTOS --- */
@@ -1041,17 +1119,42 @@ body {
     letter-spacing: 2px;
   }
 
-  /* --- CONTACTO --- */
-  
-  .linea-iconos-contacto {
-    font-size: 25px; 
-    letter-spacing: 35px;
-    padding-top: 28vmax;         
+  /*--- FICHA ---*/
+  .barra-ficha {
+    height: 80px;
+    padding: 2%;
+    font-size: 1.7rem;    
   }
 
-  .separador-contacto {
-    height: 1450px;
+  .ficha-titulo {
+    font-size: 2.5rem;
   }
+
+  .ficha-texto1 {  
+    font-size: 1.5rem;    
+  }
+
+  .ficha-texto2 {
+    font-size: 1.2rem;    
+    }
+
+  .ficha-titulo-calidad {      
+      font-size: 1.5rem;      
+    }
+
+  .ficha-titulo-medidas {       
+      font-size: 1.5rem;      
+    }
+
+  /* --- CONTACTO --- */
+  
+ .linea-iconos-contacto {
+    font-size: 35px; 
+    letter-spacing: 35px;
+    position: relative;
+    top: 29vmax;      
+  }
+
 
   /* --- SIDEBAR --- */
   .sidebar-icono-close {

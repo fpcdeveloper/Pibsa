@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+  }  
+
 .modalnew {
     display: none; /* Por defecto, estará oculto */
     position: fixed; /* Posición fija */
@@ -39,15 +44,32 @@
 
 /* Botón cerrar */
 .close {
-    color: black;
-    float: right;
-    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-family: 'Montserrat-Light', sans-serif;
+    color: white;
+    /*float: right;*/
+    font-size: 50px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
     text-decoration: none;
     cursor: pointer;
+    color: white;
+    font-weight: bold; 
+}
+
+/*************** CELULAR *******************/
+
+@media screen and (max-width: 768px) {
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;     
+    }
+
 }
