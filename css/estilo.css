@@ -159,10 +159,15 @@ body {
   line-height: 1.2;
 }
 
-.boton-argentina {
+.linea-botones-home {
   position: absolute;
   top: 600px;
-  left: 120px;
+  left: 120px;    
+  width: 33%;
+}
+
+
+.boton-argentina {    
   width: 200px;
   background-color: rgb(36, 34, 34);
   font-family: Montserrat-Regular; 
@@ -180,10 +185,7 @@ body {
   box-shadow: none !important;
 }
 
-.boton-portugal {
-  position: absolute;
-  top: 600px;
-  left: 370px;
+.boton-portugal {   
   width: 200px;
   background-color: rgb(204, 196, 196);
   font-family: Montserrat-Regular; 
@@ -220,6 +222,20 @@ body {
   color: gray;
   width: 33%;
 }
+
+.link-icono-redes {
+  text-decoration: none;  
+}
+
+.link-icono-redes:hover {
+  text-decoration: none;
+  color: #242222;
+}
+
+.icono-redes {
+  font-size: 1.3rem;
+}
+
 
 /*---- SOMOS -----*/
 
@@ -694,7 +710,7 @@ body {
  
   .texto-home {
     position: absolute;
-    top: 104px;
+    top: 12%;
     left: 37px; 
     font-family: Playfair-Regular; 
     font-size: 1rem; 
@@ -709,29 +725,27 @@ body {
     display: none;
   }
 
-  .boton-argentina {
+  .linea-botones-home {
     position: absolute;
-    top: 190px;
-    left: 37px;
-    width: 65px;
+    top: 20%;
+    left: 37px;    
+    width: 35%;
+  }
+
+
+  .boton-argentina { 
+    width: 95%;  
     height: 25px;
     background-color: #242222;
-    font-family: Montserrat-Regular; 
-    font-size: 0.5rem;
-    color: white !important;
+    font-size: 0.4rem;    
     margin-top: 15px;
   }
 
   .boton-portugal {
-    position: absolute;
-    top: 190px;
-    left: 115px;
-    width: 65px;
+    width: 95%;    
     height: 25px;
-    background-color: rgb(204, 196, 196);
-    font-family: Montserrat-Regular; 
-    font-size: 0.5rem;
-    color: black !important;
+    background-color: rgb(204, 196, 196);    
+    font-size: 0.4rem;    
     margin-top: 15px;
   }
   
@@ -740,15 +754,15 @@ body {
   }
 
   .linea-redes-home {
-    display: none;
+    position: absolute;
+    top: 27%;
+    left: 37px;    
+    font-size: 0.5rem; 
+    width: 35%;
   }
 
-  .redes1 {
-    display: none;
-  }
-
-  .redes2 {
-    display: none;
+  .icono-redes {
+    font-size: 0.6rem;
   }
 
   /* --- SOMOS ---*/
@@ -986,20 +1000,21 @@ body {
     line-height: 1.2;
   }
 
-  .boton-argentina {
+  .linea-botones-home {
     position: absolute;
-    top: 850px;
-    left: 170px;
+    top: 870px;
+    left: 170px;    
+    width: 33%;
+  }
+
+  .boton-argentina {   
     width: 250px;
     height: 50px; 
     font-size: 1.4rem;
   }
  
 
-  .boton-portugal {
-    position: absolute;
-    top: 850px;
-    left: 500px;
+  .boton-portugal {    
     width: 250px;   
     height: 50px; 
     font-size: 1.4rem;
@@ -1009,17 +1024,19 @@ body {
     position: absolute;
     top: 950px;
     left: 170px;   
-    width: 30%;
+    width: 33%;
   }
 
   .linea-redes-home {
     position: absolute;
-    top: 1000px;
+    top: 1050px;
     left: 170px;    
-    font-family: Montserrat-Regular; 
     font-size: 1.3rem; 
-    color: gray;
-    width: 30%;
+    width: 33%;
+  }
+
+  .icono-redes {
+    font-size: 2rem;
   }
 
   /*------ SOMOS ------*/
