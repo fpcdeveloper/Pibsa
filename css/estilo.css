@@ -674,6 +674,9 @@ body {
       width: 102%;
     }
 
+    .separador-ficha {
+      height: 10%;
+    }
 
   /*--- CONTACTO --- */
 
@@ -1028,6 +1031,10 @@ body {
 
   .artistica {
     width: 100%;
+  }
+
+  .separador-ficha {
+    height: 0%;
   }
 
   .barra-ficha {
