@@ -452,8 +452,7 @@ body {
 
 }
 
-.link-cuadrado-producto:hover {
-  font-size: 0.9rem !important; 
+.link-cuadrado-producto:hover {  
   text-decoration: none;
   color:rgb(54, 52, 52) !important;    
 }
@@ -577,7 +576,7 @@ body {
     font-family: 'Playfair-Regular'; 
     font-size: 2rem; 
     text-align: start;  
-    margin-top: 18%; 
+    margin-top: 14%; 
     width:70%;  
   }
 
@@ -626,12 +625,48 @@ body {
     }
 
     .ficha-AA {
-      width: 30%; 
+      width: 100%;     
       text-align: end; 
       margin-right: 4%; 
-      margin-bottom: 0%;
+      margin-bottom: 2%;
     }
-  
+
+    .link-ficha-AA {
+      font-family: 'Montserrat-Regular'; 
+      font-size: 0.8rem;
+      font-style: italic;   
+      text-decoration: none;  
+    }
+
+    .link-ficha-AA:hover {
+      font-family: 'Montserrat-Regular'; 
+      font-size: 0.8rem;
+      font-style: italic;   
+      text-decoration: none;  
+      color: #a4784a;;
+    }
+
+    .link-ficha-AA-plus {
+      font-size:1rem; 
+      color: #a4784a;
+      text-decoration: none; 
+    }
+
+    .link-ficha-AA-plus:hover {      
+      color: #000;      
+      font-weight: bold; 
+    }
+
+    .imagen-AA {
+      width: 6%; 
+      padding-right:2%;
+    }
+ 
+    .artistica {
+      width: 102%;
+    }
+
+
   /*--- CONTACTO --- */
 
   .linea-iconos-contacto {      
@@ -927,7 +962,7 @@ body {
     width: 70px;
   }
 
-  /* --- FICHA ---*/
+  /* --- FICHA CELULAR ---*/
 
   .ficha-titulo {
     padding-left: 8%;     
@@ -936,7 +971,46 @@ body {
   }
 
   .ficha-AA {
-    display: none;
+    width: 100%;     
+    text-align: end; 
+    margin-right: 4%; 
+    margin-bottom: 7%;
+    margin-top: 10%;
+  }
+
+  .link-ficha-AA {
+    font-family: 'Montserrat-Regular'; 
+    font-size: 0.8rem;
+    font-style: italic;   
+    text-decoration: none;  
+  }
+
+  .link-ficha-AA:hover {
+    font-family: 'Montserrat-Regular'; 
+    font-size: 0.8rem;
+    font-style: italic;   
+    text-decoration: none;  
+    color: #a4784a;;
+  }
+
+  .link-ficha-AA-plus {
+    font-size:1rem; 
+    color: #a4784a;
+    text-decoration: none; 
+  }
+
+  .link-ficha-AA-plus:hover {      
+    color: #000;      
+    font-weight: bold; 
+  }
+
+  .imagen-AA {
+    width: 15%; 
+    padding-right:5%;
+  }
+
+  .artistica {
+    width: 100%;
   }
 
   .barra-ficha {
@@ -1164,6 +1238,48 @@ body {
 
   .ficha-titulo-medidas {       
       font-size: 1.5rem;      
+    }
+
+    .ficha-AA {
+      width: 100%;     
+      text-align: end; 
+      margin-right: 5%; 
+      margin-bottom: 1%;
+    }
+
+    .link-ficha-AA {
+      font-family: 'Montserrat-Regular'; 
+      font-size: 1.2rem;
+      font-style: italic;   
+      text-decoration: none;  
+    }
+
+    .link-ficha-AA:hover {
+      font-family: 'Montserrat-Regular'; 
+      font-size: 1.2rem;
+      font-style: italic;   
+      text-decoration: none;  
+      color: #a4784a;;
+    }
+
+    .link-ficha-AA-plus {
+      font-size:1.4rem; 
+      color: #a4784a;
+      text-decoration: none; 
+    }
+
+    .link-ficha-AA-plus:hover {      
+      color: #000;      
+      font-weight: bold; 
+    }
+
+    .imagen-AA {
+      width: 7%; 
+      padding-right:3%;
+    }
+
+    .artistica {
+      width: 100%;
     }
 
   /* --- CONTACTO --- */
